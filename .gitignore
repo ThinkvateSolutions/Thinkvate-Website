@@ -1,0 +1,6 @@
+# Ignore temporary files
+*.log
+*.tmp
+# Ignore editor files
+.DS_Store
+*.sublime-project
