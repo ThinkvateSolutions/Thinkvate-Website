@@ -21,9 +21,14 @@
             <a class="navbar-brand" href="#">
                 <img src="Logo.png"  class="logo" alt="logo"/><span class="websitelogo">Thinkvate Solutions</span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"
+                    style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'white\' stroke-width=\'2\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');"></span>
             </button>
+
+            
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-link" href="#homsection" id="navItem1">Home</a>
@@ -41,25 +46,25 @@
     </nav>
 
     
-    <!-- Home Page Section -->
-<div class="hero" id="homsection">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h5 class="text-uppercase">Fueling Intelligence. Shaping Tomorrow.</h5>
-        <h1 class="fw-bold">Empowering Industries through Intelligent Digital Solutions</h1>
-        <div class="hero-buttons">
-          <a href="#about" class="btn btn-learn">Learn More</a>
-          <a href="#contact-us" class="btn btn-join">Join Our Community</a>
+        <!-- Home Page Section -->
+        <div class="hero" id="homsection">
+            <div class="hero-overlay">
+            <div class="hero-content">
+                <h5 class="text-uppercase">Fueling Intelligence. Shaping Tomorrow.</h5>
+                <h1 class="fw-bold">Empowering Industries through Intelligent Digital Solutions</h1>
+                <div class="hero-buttons">
+                <a href="#about" class="btn btn-learn">Learn More</a>
+                <a href="#contact-us" class="btn btn-join">Join Our Community</a>
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
+    
         <!-- Who We Are Section -->
         
         <div class="section" id="about">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row g-md-4 align-items-center">
                     <div class="col-md-6 col-12 mb-4 mb-md-0">
                         <h2 class="font-size service-color ">Who We Are</h2>
                         <p class="paragraph">Thinkvate Solutions Pvt. Ltd. is a tech-driven company registered in 2019, with a renewed focus
@@ -68,7 +73,7 @@
                             industrial sector through
                             automation, AI, and trusted collaboration.</p>
                     </div>
-                    <div class="col-md-6 col-12 text-center">
+                    <div class="col-md-6 col-12 text-center ms-md-4">
                         <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" class="img-fluid" alt="Team Illustration">
                     </div>
                 </div>
@@ -116,17 +121,18 @@
                      
         </div>
 
+
     <!-- Join Community Section -->
 
-    <div class="section bg-light text-center" id="community">
-            <div class="container">
-                <h2 class="colorpattern">Be Part of the Innovation</h2>
-                <p class="paragraph">Join a community of creators, thinkers, and innovators.</p>
-                <a href="#contact-us" class="btn join-btn mt-3">Join Our Mission</a>
-                
+        <div class="section2 bg-light text-center" id="community">
+                <div class="container">
+                    <h2 class="colorpattern">Be Part of the Innovation</h2>
+                    <p class="paragraph">Join a community of creators, thinkers, and innovators.</p>
+                    <a href="#contact-us" class="btn join-btn mt-3">Join Our Mission</a>
+                    
+                </div>
             </div>
         </div>
-    </div>
 
     <!-- why  choose -->
 
@@ -553,70 +559,57 @@
         </div>
     </footer>
 
+    <!-- script section -->
     
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
     <script>
         const slides = document.querySelectorAll(".slide");
         const dots = document.querySelectorAll(".dot");
         const nextBtn = document.querySelector(".next-btn");
         const prevBtn = document.querySelector(".prev-btn");
         let current = 0;
-      
+
         function showSlide(index) {
-          slides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === index);
-            dots[i].classList.toggle("active-dot", i === index);
-          });
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+                dots[i].classList.toggle("active-dot", i === index);
+            });
         }
-      
+
         nextBtn.addEventListener("click", () => {
-          current = (current + 1) % slides.length;
-          showSlide(current);
-        });
-      
-        prevBtn.addEventListener("click", () => {
-          current = (current - 1 + slides.length) % slides.length;
-          showSlide(current);
-        });
-      
-        dots.forEach((dot, index) => {
-          dot.addEventListener("click", () => {
-            current = index;
+            current = (current + 1) % slides.length;
             showSlide(current);
-          });
         });
-      
+
+        prevBtn.addEventListener("click", () => {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                current = index;
+                showSlide(current);
+            });
+        });
+
         document.addEventListener("keydown", (e) => {
-          if (e.key === "ArrowRight") nextBtn.click();
-          if (e.key === "ArrowLeft") prevBtn.click();
+            if (e.key === "ArrowRight") nextBtn.click();
+            if (e.key === "ArrowLeft") prevBtn.click();
         });
-      
+
         let autoSlide = setInterval(() => {
-          current = (current + 1) % slides.length;
-          showSlide(current);
+            current = (current + 1) % slides.length;
+            showSlide(current);
         }, 6000);
-      
+
         showSlide(current);
-      </script>
-      
-      <script>
-        function toggleOtherInput() {
-          const select = document.getElementById("industrialType");
-          const input = document.getElementById("otherInput");
+    </script>
     
-          if (select.value === "Other") {
-            input.style.display = "block";
-            input.required = true;
-          } else {
-            input.style.display = "none";
-            input.required = false;
-            input.value = "";
-          }
-        }
-      </script>
       
       
 </body>
