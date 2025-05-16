@@ -1,80 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Thinkvita.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thinkvate Solutions | Empowering Innovation</title>
+<meta name="description"
+    content="Thinkvate Solutions provides cutting-edge digital services to help businesses innovate and grow.">
+<meta name="keywords" content="Thinkvate, digital solutions, IT services, web development, software consulting">
+<meta name="author" content="Thinkvate Solutions">
+<link rel="canonical" href="https://www.thinkvate.com">
+
+<meta property="og:title" content="Thinkvite Solutions | Empowering Innovation">
+<meta property="og:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
+<meta property="og:image" content="https://www.thinkvate.com/assets/og-image.jpg">
+<meta property="og:url" content="https://www.thinkvate.com">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thinkvita Solutions | Empowering Innovation">
+<meta name="twitter:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
+<meta name="twitter:image" content="https://www.thinkvita.com/assets/twitter-image.jpg">
+
+<!-- Favicon -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="Thinkvate.css">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+
+
+<!-- Content Security Policy -->
+<meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com 'unsafe-inline';
+      style-src 'self' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
+      font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+      img-src 'self' https://images.unsplash.com https://cdn-icons-png.flaticon.com https://randomuser.me data:;
+      connect-src 'self';
+      frame-src 'self' https://docs.google.com;
+    ">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), fullscreen=(self)">
+
+<!-- Required JS for Bootstrap 4 Navbar and Components -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<script src="nav.js"></script>
 </head>
+
+  
 
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="Logo.png"  class="logo" alt="logo"/><span class="websitelogo">Thinkvate Solutions</span>
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Logo.png" alt="logo" class="logo me-2">
+                <span class="webname"> Thinkvate Solutions</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"
-                    style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'white\' stroke-width=\'2\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');"></span>
+                    style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'white\' stroke-width=\'2\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');">
+                </span>
             </button>
 
-            
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="#homsection" id="navItem1">Home</a>
-                    <a class="nav-link active" id="navItem1" href="#wcuSection">
-                        Why Choose Us
-                        <span class="sr-only">(current)</span>
-                    </a>
-                    <a class="nav-link" href="#exploreMenuSection" id="navItem2">Our Services</a>
-                    <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">About Us</a>
-                    <a class="nav-link" href="#contact-us" id="navItem4">Form</a>
-                    <a class="nav-link" href="#followUsSection" id="navItem4">Mentors</a>
+                <div class="navbar-nav ml-auto text-center name">
+                    <a class="nav-link pl-3" href="#homsection" onclick="collapseNavbar()">Home</a>
+                    <a class="nav-link pl-4" href="#wcuSection" onclick="collapseNavbar()">Why Choose Us</a>
+                    <a class="nav-link pl-4" href="#exploreMenuSection" onclick="collapseNavbar()">Our Services</a>
+                    <a class="nav-link pl-4" href="#deliveryPaymentSection" onclick="collapseNavbar()">About Us</a>
+                    <a class="nav-link pl-4" href="#contact-us" onclick="collapseNavbar()">Form</a>
+                    <a class="nav-link pl-2" href="#followUsSection" onclick="collapseNavbar()">Mentors</a>
+
                 </div>
             </div>
         </div>
     </nav>
 
-    
-        <!-- Home Page Section -->
+
+    <div>
         <div class="hero" id="homsection">
             <div class="hero-overlay">
-            <div class="hero-content">
-                <h5 class="text-uppercase">Fueling Intelligence. Shaping Tomorrow.</h5>
-                <h1 class="fw-bold">Empowering Industries through Intelligent Digital Solutions</h1>
-                <div class="hero-buttons">
-                <a href="#about" class="btn btn-learn">Learn More</a>
-                <a href="#contact-us" class="btn btn-join">Join Our Community</a>
+                <div class="hero-content">
+                    <h5 class="text-uppercase">Fueling Intelligence. Shaping Tomorrow.</h5>
+                    <h1 class="fw-bold">Empowering Industries through Intelligent Digital Solutions</h1>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-learn">Learn More</a>
+                        <a href="#contact-us" class="btn btn-join">Join Our Community</a>
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-    
+
         <!-- Who We Are Section -->
-        
+
         <div class="section" id="about">
             <div class="container">
                 <div class="row g-md-4 align-items-center">
                     <div class="col-md-6 col-12 mb-4 mb-md-0">
                         <h2 class="font-size service-color ">Who We Are</h2>
-                        <p class="paragraph">Thinkvate Solutions Pvt. Ltd. is a tech-driven company registered in 2019, with a renewed focus
-                            on digital innovation in
-                            2025. As a start-up, our mission is to build purpose-led platforms that bridge gaps in the
-                            industrial sector through
-                            automation, AI, and trusted collaboration.</p>
+                        <p class="paragraph"><strong>Thinkvate Solutions</strong> is an industrial-tech company driving
+                            digital transformation in India’s manufacturing, energy, and
+                            infrastructure sectors. Founded by industry veterans with over 20 years of experience, we
+                            combine deep domain expertise
+                            with cutting-edge AI to solve real-world operational challenges. Our flagship platform,
+                            diligince.ai, is India’s first
+                            AI-powered industrial ecosystem—connecting manufacturers with verified service providers,
+                            logistics vendors, and expert
+                            professionals through intelligent matching and secure collaboration.</p>
                     </div>
                     <div class="col-md-6 col-12 text-center ms-md-4">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" class="img-fluid" alt="Team Illustration">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" class="img-fluid"
+                            alt="Team Illustration">
                     </div>
                 </div>
             </div>
@@ -86,53 +144,65 @@
                 <h1 class="heading-color service-color section-title">Our Product</h1>
                 <h3 class="diligince-color" id="changingText">Meet Diligince.ai</h3>
                 <p class="mb-5 paragraph">
-                  We are building diligince.ai, our flagship AI-powered SaaS platform designed to connect industries with expert
-                  professionals, verified service providers, logistics, and vendors — all in one secure ecosystem.
+                    Diligince.ai is India’s first AI-driven industrial ecosystem platform, leveraging proprietary
+                    matching algorithms to
+                    connect businesses with verified service providers, domain experts, and vendors—cutting procurement
+                    time by 60% and
+                    boosting match accuracy by 85%.
                 </p>
-              
+
                 <div class="slider">
-                  <button class="nav-btn prev-btn" aria-label="Previous Slide">❮</button>
-              
-                  <div class="slide active">
-                    <i class="bi bi-cpu"></i>
-                    <h5>Advanced Automation</h5>
-                    <p class="paragraph">Automate your workflows with intelligent systems.</p>
-                  </div>
-                  <div class="slide">
-                    <i class="bi bi-bar-chart"></i>
-                    <h5>Deep Insights</h5>
-                    <p class="paragraph">Unlock data-driven decision-making through smart analytics.</p>
-                  </div>
-                  <div class="slide">
-                    <i class="bi bi-graph-up"></i>
-                    <h5>Enhanced Productivity</h5>
-                    <p class="paragraph">Streamline operations to boost output and reduce costs.</p>
-                  </div>
-              
-                  <button class="nav-btn next-btn" aria-label="Next Slide">❯</button>
+                    <button class="nav-btn prev-btn" aria-label="Previous Slide">❮</button>
+
+                    <div class="slide active">
+                        <i class="bi bi-cpu"></i>
+                        <h5>Smart Matching</h5>
+                        <p class="paragraph">our AI evaluates 50+ parameters to recommend the ideal service providers,
+                            vendors, and specialists for your specific
+                            industrial requirements.</p>
+                    </div>
+                    <div class="slide">
+                        <i class="bi bi-bar-chart"></i>
+                        <h5>Verified Ecosystem</h5>
+                        <p class="paragraph">Every professional and vendor undergoes a rigorous 3-step verification
+                            process, ensuring you connect only with trusted,
+                            qualified partners.</p>
+                    </div>
+                    <div class="slide">
+                        <i class="bi bi-graph-up"></i>
+                        <h5>Performance Analytics</h5>
+                        <p class="paragraph">Track vendor performance, project milestones, and cost metrics in real-time
+                            with customizable dashboards tailored to
+                            your industry needs.</p>
+                    </div>
+
+                    <button class="nav-btn next-btn" aria-label="Next Slide">❯</button>
                 </div>
-              
+
                 <div class="dots text-center mt-3 pb-2">
-                  <span class="dot active-dot" aria-label="Go to slide 1"></span>
-                  <span class="dot" aria-label="Go to slide 2"></span>
-                  <span class="dot" aria-label="Go to slide 3"></span>
-                </div>
-              </div>
-                     
-        </div>
+                    <span class="dot" role="button" tabindex="0" aria-label="Go to slide 1"></span>
+                    <span class="dot active-dot" role="button" tabindex="0" aria-label="Go to slide 2"></span>
+                    <span class="dot" role="button" tabindex="0" aria-label="Go to slide 3"></span>
 
 
-    <!-- Join Community Section -->
-
-        <div class="section2 bg-light text-center" id="community">
-                <div class="container">
-                    <h2 class="colorpattern">Be Part of the Innovation</h2>
-                    <p class="paragraph">Join a community of creators, thinkers, and innovators.</p>
-                    <a href="#contact-us" class="btn join-btn mt-3">Join Our Mission</a>
-                    
                 </div>
             </div>
+
         </div>
+
+
+        <!-- Join Community Section -->
+
+        <div class="section2 bg-light text-center" id="community">
+            <div class="container">
+                <h2 class="colorpattern">Be Part of the Innovation</h2>
+                <p class="paragraph">Join a community of creators, thinkers, and innovators.</p>
+                <a href="#contact-us" class="btn join-btn mt-3">Join Our Mission</a>
+
+            </div>
+        </div>
+
+    </div>
 
     <!-- why  choose -->
 
@@ -141,37 +211,60 @@
             <div class="text-center mb-5">
                 <h2 class="wcu-section-heading service-color section-title">Why Choose Us</h2>
                 <p class="wcu-section-description paragraph">
-                    Practical, purpose-driven innovation for industrial transformation.
+                    We leverage deep industry expertise and advanced AI technologies to address critical operational
+                    challenges in Indian
+                    industries. Our approach drives measurable efficiency gains through intelligent, data-driven
+                    connections, ensuring
+                    optimized performance and verified results.
                 </p>
             </div>
             <div class="row g-4">
                 <!-- Card 1 -->
-                <div class="col-12 col-md-4 mb-2">
+                <div class="col-12 col-md-12 col-lg-4 mb-2">
                     <div class="wcu-card text-center p-4 h-100">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2436/2436628.png" class="wcu-card-image mb-3" alt="Industrial Background" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2436/2436628.png" class="wcu-card-image mb-3"
+                            alt="Industrial Background" />
                         <h4 class="wcu-card-title">Industrial Background with Digital Focus</h4>
                         <p class="wcu-card-description ">
-                            Founded by an experienced industry professional, we understand on-ground realities and translate them into practical digital tools.
+                            Founded by an experienced industry professional, With over 20 years of hands-on industrial
+                            experience, our founding team understands real operational challenges. We
+                            design practical, impact-driven solutions that solve real-world problems—not just
+                            theoretical
+                            ones—ensuring measurable
+                            value for your business.
                         </p>
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="col-12 col-md-4 mb-2">
+                <div class="col-12 col-md-12 col-lg-4 mb-2">
                     <div class="wcu-card text-center p-4 h-100">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" class="wcu-card-image mb-3" alt="Startup Agility" />
-                        <h4 class="wcu-card-title">Early-Stage Agility with Long-Term Vision</h4>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" class="wcu-card-image mb-3"
+                            alt="Startup Agility" />
+                        <h4 class="wcu-card-title">Specialized Focus on Industrial Efficiency</h4>
                         <p class="wcu-card-description">
-                            As a start-up, we’re lean, adaptable, and focused on solving core pain points through iterative innovation and user feedback.
+                            As a start-up, we’re lean, adaptable, and Unlike generic platforms, we specialize in
+                            AI-driven
+                            solutions for manufacturing, energy, and infrastructure. Our
+                            industry-focused approach ensures faster deployment, precise resource matching, and features
+                            built to enhance
+                            operational efficiency.
                         </p>
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="col-12 col-md-4 mb-2">
+                <div class="col-12 col-md-12 col-lg-4 mb-2">
                     <div class="wcu-card text-center p-4 h-100">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2706/2706974.png" class="wcu-card-image mb-3" alt="Mentorship Culture" />
-                        <h4 class="wcu-card-title">Mentorship-Driven Culture</h4>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" class="wcu-card-image mb-3"
+                            alt="Secure Data System" />
+                        <h4 class="wcu-card-title">Data-Driven Verification System</h4>
                         <p class="wcu-card-description">
-                            Backed by experts from top organizations, our journey is guided by knowledge-sharing and real-world industry mentorship.
+                            Trust is essential in industrial collaborations. Diligince.ai goes beyond traditional
+                            directories with a robust 3-tier
+                            verification process. Our proprietary scoring algorithm assesses technical expertise,
+                            project
+                            experience, and
+                            performance metrics—ensuring businesses connect only with pre-vetted, qualified partners
+                            tailored to their needs.
                         </p>
                     </div>
                 </div>
@@ -279,20 +372,35 @@
 
     <div class="healthy-food-section pt-5 pb-5" id="deliveryPaymentSection">
         <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <!-- Video Column -->
-                    <div class="col-12 col-md-10 text-center">
-                        <video class="responsive-video" controls autoplay muted loop playsinline>
-                            <source src="_Welcome_to_Thinkvate_V1.mp4" type="video/mp4">
-                            
-                        </video>
-                    </div>
-
+            <div class="row align-items-center justify-content-center">
+                <!-- Video Column -->
+                <div class="col-12 col-md-10 text-center">
+                    <video class="responsive-video" controls autoplay muted loop playsinline>
+                        <source src="_Welcome_to_Thinkvate_V1.mp4" type="video/mp4">
+                        <track src="captions_en.vtt" kind="captions" srclang="en" label="English">
+                    </video>
+                      
+                </div>
+                
                 <!-- Text Content Column -->
                 <div class="col-12 col-md-12">
                     <h1 class="healthy-food-section-heading mb-3 service-color">About Us</h1>
                     <p class="healthy-food-section-description">
-                        Thinkvate Solutions Pvt. Ltd. was incorporated in 2019 with a focus on control and instrumentation. In 2025, we realigned our mission to digital solutions that solve industrial problems more efficiently. As a start-up recognized under MSME, our purpose is to create scalable and secure technology that brings industries closer to progress.
+                        Established in 2019 by industry veterans with deep expertise in control and instrumentation,
+                        Thinkvate Solutions Pvt.
+                        Ltd. strategically pivoted in 2025 to become a digital-first technology leader focused on
+                        transforming India’s
+                        industrial landscape.
+
+                        As a government-recognized MSME (UDYAM-AP-10-0075552), we develop AI-powered solutions that
+                        address critical operational
+                        challenges across industrial sectors. Our mission is to drive measurable improvements in
+                        efficiency, simplify vendor
+                        management, and enable seamless collaboration through smart, data-driven platforms. By combining
+                        domain expertise with
+                        intelligent automation, we are helping industries embrace digital transformation and thrive in
+                        an increasingly connected
+                        economy.
                     </p>
 
                     <h2 class="text-center mt-5 mb-3 service-color ">Our Journey</h2>
@@ -301,15 +409,17 @@
                             <div class="timeline-content">
                                 <h3>Founded Thinkvate</h3>
                                 <p class="year">2019</p>
-                                <p class="paragraph">Launched with a mission to empower MSMEs & Mid-Size-Industries through AI.</p>
+                                <p class="paragraph">Launched with a mission to empower MSMEs & Mid-Size-Industries
+                                    through AI.</p>
                             </div>
                             <div class="timeline-dot"></div>
                         </div>
                         <div class="timeline-item mb-4">
-                            <div class="timeline-content">
+                            <div class="timeline-content pl-2">
                                 <h3>Diligince.ai MVP(Development Stage)</h3>
                                 <p class="year">2025</p>
-                                <p class="paragraph">MSME registration and realignment as a digital-first company,Started building our flagship AI SaaS product.</p>
+                                <p class="paragraph">MSME registration and realignment as a digital-first
+                                    company,Started building our flagship AI SaaS product.</p>
                             </div>
                             <div class="timeline-dot"></div>
                         </div>
@@ -331,19 +441,30 @@
 
     <div class="founder-section py-5">
         <div class="container">
-             
-                    <h2 class="founder-heading service-color section-title">Founder & Director</h2>
-                    <h4 class="founder-subtitle ">Thinkvate Solutions Pvt. Ltd.</h4>
-                    <p class="founder-description paragraph">
-                        With over 20 years of experience in Instrumentation & Control Engineering in gas power plants, Nagesh brings deep insight into India’s industrial challenges.
-                        <br>His journey from engineering leadership in Saudi Arabia to start-up founder in India reflects his passion for solving real-world industrial problems.
-                        <br>
-                        He founded Thinkvate Solutions with a mission to digitize Indian industries using AI-powered platforms like <strong>diligince.ai</strong> — connecting industries with expert professionals, service providers, and logistics through secure, scalable technology.
-                    </p>
-                
-            </div>
+
+            <h2 class="founder-heading service-color section-title">Founder & Director</h2>
+            <h4 class="founder-subtitle ">Thinkvate Solutions Pvt. Ltd.</h4>
+            <p class="founder-description paragraph">
+                With over 20 years of experience in Instrumentation & Control Engineering, Nagesh has led major power
+                plant projects
+                across India and Saudi Arabia. His deep understanding of industrial operations and vendor ecosystems led
+                to the
+                creation
+                of <strong>Diligence.ai</strong>—India’s first AI-powered platform designed to streamline vendor
+                management and
+                connect industries with
+                verified service providers.
+
+                Nagesh combines technical expertise with strategic vision to drive Thinkvate’s mission of building
+                secure, scalable,
+                and
+                intelligent solutions that improve operational efficiency and enable digital transformation across
+                Indian
+                industries.
+            </p>
         </div>
     </div>
+
 
 
     <!-- mentor section  -->
@@ -353,165 +474,185 @@
             <h1 class="mentors-heading section-title text-center mb-5">Our Mentors</h1>
             <div class="row justify-content-center">
                 <!-- Mentor Card -->
-                <div class="col-6 col-md-4 col-lg-2 text-center mentor-card mb-4">
+                <div class="col-10 col-md-6 col-lg-4  text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
-                        <img src="Arun.jpg" alt="Frontend Developer" class="mentor-img" />
+                        <img src="Arun.jpg" alt="Project Manager" class="mentor-img" />
                         <div class="mentor-overlay">
-                            <p class="mentor-role">Frontend Developer</p>
-                            <p class="mentor-details">Kishore specializes in React and TailwindCSS to build dynamic UIs with responsiveness in mind.</p>
+                            <p class="mentor-role">Project Manager</p>
+                            <p class="mentor-details">A seasoned engineering professional with 15+ years of experience
+                                in
+                                DevOps, automation testing, and technical training.
+                                Holds an M.Tech in Instrumentation and specializes in blending technical mentoring with
+                                stress management coaching.
+                                Currently driving innovation and efficiency as a DevOps Engineer.</p>
                         </div>
                     </div>
-                    <p class="mentor-name mt-2">Arun</p>
-                    
+                    <p class="mentor-name mt-2">G.Arun kumar</p>
                 </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center mentor-card mb-4">
+                <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
-                        <img src="female.jpg" alt="Backend Engineer" class="mentor-img" />
+                        <img src="female.jpg" alt="Manager" class="mentor-img" />
                         <div class="mentor-overlay">
-                            <p class="mentor-role">Backend Engineer</p>
-                            <p class="mentor-details">Kishore specializes in React and TailwindCSS to build dynamic UIs with responsiveness in mind.</p>
+                            <p class="mentor-role">Manager in multinational company </p>
+                            <p class="mentor-details">Bringing over 15 years of leadership in IT service delivery and regulatory compliance, I mentor professionals on
+                            building resilient, audit-ready operations. From driving successful SOC 2 and ISO 27001 audits to optimizing ITSM
+                            practices and strengthening cloud and access governance, I help organizations align technology with trust,
+                            performance, and compliance.</p>
                         </div>
                     </div>
-                    <p class="mentor-name mt-2">Radha</p>
-                    
+                    <p class="mentor-name mt-2">Anitha K</p>
                 </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center mentor-card mb-4">
+                <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
-                        <img src="Santosh.jpg" alt="UI/UX Designer" class="mentor-img" />
+                        <img src="Santosh.jpg" alt="Full-Stack Developer" class="mentor-img" />
                         <div class="mentor-overlay">
-                            <p class="mentor-role">UI/UX Designer</p>
-                            <p class="mentor-details">Kishore specializes in React and TailwindCSS to build dynamic UIs with responsiveness in mind.</p>
+                            <p class="mentor-role">Full-Stack Developer</p>
+                            <p class="mentor-details">I have over 10 years of experience in the software industry,
+                                specializing in full-stack development, solution
+                                architecture, and project management. As a Project Manager at a multinational
+                                corporation, I
+                                lead successful project
+                                delivery while also providing freelance IT consulting and development services.
+                            </p>
                         </div>
                     </div>
-                    <p class="mentor-name mt-2">Santosh</p>
-                    
+                    <p class="mentor-name mt-2">G santosh kumar </p>
                 </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center mentor-card mb-4">
+                <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
-                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="DevOps Engineer" class="mentor-img" />
+                        <img src="hari.jpg" alt="Director"
+                            class="mentor-img" />
                         <div class="mentor-overlay">
-                            <p class="mentor-role">DevOps Engineer</p>
-                            <p class="mentor-details">Kishore specializes in React and TailwindCSS to build dynamic UIs with responsiveness in mind.</p>
+                            <p class="mentor-role">Director in multiple national company</p>
+                            <p class="mentor-details">With 20+ years in IT, I lead global SAP implementation programs as a Director in a multinational company. I specialize
+                            in project delivery, program management, and vendor coordination across regions including the US, UK, Germany, and Hong
+                            Kong. My experience spans FMCG, manufacturing, healthcare, and sports domains.</p>
                         </div>
                     </div>
-                    <p class="mentor-name mt-2">Surendra</p>
-                    
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2 text-center mentor-card mb-4">
-                    <div class="mentor-img-wrapper">
-                        <img src="kishore.jpg" alt="AI/ML Engineer" class="mentor-img" />
-                        <div class="mentor-overlay">
-                            <p class="mentor-role">AI/ML Engineer</p>
-                            <p class="mentor-details">Kishore specializes in React and TailwindCSS to build dynamic UIs with responsiveness in mind.</p>
-                        </div>
-                    </div>
-                    <p class="mentor-name mt-2">Mani</p>
-                    
+                    <p class="mentor-name mt-2">Hari Kirshna</p> 
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Technical team section -->
     <div class="team-section py-5">
         <div class="container">
             <h2 class="text-center section-title mb-5 service-color">Technical Core Team</h2>
             <div class="row justify-content-center">
-
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4">
-                    <div class="team-card">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Frontend Developer" class="team-photo">
+    
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <img src="kishore.jpg" alt="Frontend Developer" class="team-photo">
                         <div class="team-info">
                             <p class="team-role">Frontend Developer</p>
                         </div>
                         <p class="team-name">Kishore</p>
+                        <p class="team-description">B.Tech graduate in CSE (AI & ML) with a strong foundation in full-stack web development. Completed the Full Stack
+                        Development program at NxtWave, gaining hands-on experience in building dynamic, real-world web applications. Currently
+                        serving as a Team Lead, leveraging AI expertise and development skills to deliver scalable, high-performance solutions.
+                        </p>
                     </div>
                 </div>
-
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4">
-                    <div class="team-card">
+    
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
+                    <div class="team-card text-center">
                         <img src="Radha.jpg" alt="Backend Engineer" class="team-photo">
                         <div class="team-info">
                             <p class="team-role">Backend Engineer</p>
                         </div>
                         <p class="team-name">Radha</p>
+                        <p class="team-description">B.Tech graduate in CSE (AI & ML) with strong expertise in backend development. Skilled in building robust APIs using SQL
+                        and Spring Boot, with hands-on experience in microservices architecture and cloud deployment. Completed a Java Full
+                        Stack course focused on backend development. Currently working as a Backend Developer, delivering scalable and efficient
+                        server-side solutions.</p>
                     </div>
                 </div>
-
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4">
-                    <div class="team-card">
-                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="UI/UX Designer" class="team-photo">
+    
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <img src="sravani.jpg" alt="Frontend Developer" class="team-photo">
                         <div class="team-info">
-                            <p class="team-role">UI/UX Designer</p>
+                            <p class="team-role">Frontend Developer</p>
+                        </div>
+                        <p class="team-name">Sravani</p>
+                        <p class="team-description">B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep learning. Currently working as
+                        a Frontend Developer, with practical experience in building responsive, user-focused web applications. Completed a
+                        specialized frontend development course, gaining proficiency in HTML, CSS, JavaScript, Bootstrap, and React.</p>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
+                    <div class="team-card text-center">
+                        <img src="Anusha.jpg" alt="DevOps Engineer" class="team-photo">
+                        <div class="team-info">
+                            <p class="team-role">AI & ML Engineer</p>
                         </div>
                         <p class="team-name">Anusha</p>
+                        <p class="team-description">B.Tech graduate in CSE with strong expertise in Python, machine learning, and deep learning. Currently working
+                        as an AI & ML Engineer, leveraging tools like n8n for workflow automation and integration. Experienced in building and
+                        deploying scalable AI-driven solutions using frameworks such as TensorFlow, PyTorch, and OpenCV to solve real-world
+                        problems.</p>
                     </div>
                 </div>
-
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4">
-                    <div class="team-card">
-                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="DevOps Engineer" class="team-photo">
-                        <div class="team-info">
-                            <p class="team-role">DevOps Engineer</p>
-                        </div>
-                        <p class="team-name">Surendra</p>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4">
-                    <div class="team-card">
+    
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
+                    <div class="team-card text-center">
                         <img src="mani.webp" alt="AI/ML Engineer" class="team-photo">
                         <div class="team-info">
-                            <p class="team-role">AI/ML Engineer</p>
+                            <p class="team-role">Testing Engineer</p>
                         </div>
-                        <p class="team-name">Mani</p>
+                        <p class="team-name">Manikanta</p>
+                        <p class="team-description">B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep learning. Currently working as
+                        a Software Tester, with practical experience in quality assurance and automated testing. Completed a specialized testing
+                        course, gaining proficiency in manual testing, Selenium, JUnit, and test automation frameworks to ensure reliable,
+                        high-quality software delivery.
+                        </p>
                     </div>
                 </div>
-
+    
             </div>
         </div>
     </div>
+      
 
     <!-- contact us section-->
-   
-   <div class="contact-us-wrapper py-5 bg-light" id="contact-us">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center mb-4">
-                <h2 class="contact-title ">Get in Touch</h2>
-                <p class="contact-subtitle paragraph">We’re here to help and answer any question you might have.</p>
-            </div>
-            <div class="col-lg-8 col-md-10">
-                
+
+    <div class="contact-us-wrapper py-5 bg-light" id="contact-us">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="contact-title ">Get in Touch</h2>
+                    <p class="contact-subtitle paragraph">We’re here to help and answer any question you might have.</p>
+                </div>
+                <div class="col-lg-8 col-md-10">
+
                     <div class="text-center">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezzXfz9ZD0jAXSSbdXPmshL7KgztRqwnsbwmuPou8w-tqw5A/viewform?embedded=true" target="_blank"><button >Get In Touch</button></a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezzXfz9ZD0jAXSSbdXPmshL7KgztRqwnsbwmuPou8w-tqw5A/viewform?embedded=true"
+                            target="_blank"><button>Contact Us</button></a>
                     </div>
-                
+
+                </div>
             </div>
         </div>
     </div>
-    </div>
-           
-     
-        
 
 
     <!-- Footer Section -->
-    
+
     <footer class="footer-section bg-dark text-white pt-5 pb-4">
         <div class="container">
-            <div class="row text-center text-md-start ">
+            <div class="row text-center text-md-start">
+    
                 <!-- Column 1: Quick Links -->
                 <div class="col-12 col-md-4 mb-4 allignment">
                     <h5 class="mb-3">Quick Links</h5>
-                    <ul class="list-unstyled ">
+                    <ul class="list-unstyled">
                         <li><a href="#homsection" class="text-white text-decoration-none d-block">Home</a></li>
                         <li><a href="#wcuSection" class="text-white text-decoration-none d-block">Why Choose Us</a></li>
-                        <li><a href="#exploreMenuSection" class="text-white text-decoration-none d-block">Our Services</a></li>
+                        <li><a href="#exploreMenuSection" class="text-white text-decoration-none d-block">Our Services</a>
+                        </li>
                     </ul>
                 </div>
     
@@ -519,37 +660,45 @@
                 <div class="col-12 col-md-4 mb-4 allignment">
                     <h5 class="mb-3">Connect</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#deliveryPaymentSection" class="text-white text-decoration-none d-block">About Us</a></li>
-                        
+                        <li><a href="#deliveryPaymentSection" class="text-white text-decoration-none d-block">About Us</a>
+                        </li>
                         <li><a href="#followUsSection" class="text-white text-decoration-none d-block">Mentors</a></li>
                     </ul>
     
-                    <!-- Social Media Icons (Centered Below) -->
+                    <!-- Social Media Icons (Accessible) -->
                     <div class="d-flex justify-content-center mt-3">
                         <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
     
                 <!-- Column 3: Company Details -->
-                <div class="col-12 col-md-4 mb-4 allignment">
+                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
                     <h5 class="mb-3">Company Details</h5>
                     <p class="mb-1 fw-bold">Thinkvate Solutions Pvt. Ltd</p>
                     <p class="mb-1">contact@thinkvate.com</p>
                     <p class="mb-0 address-text">
-                       CIN: U74999AP2019PTC111774<br>
-                       MSME Reg.No: UDYAM-AP-10-0075552<br>
-                       Visakhapatnam - 530051
+                        CIN: U74999AP2019PTC111774<br>
+                        MSME Reg.No: UDYAM-AP-10-0075552<br>
+                        Visakhapatnam - 530051
                     </p>
                 </div>
-                
+    
             </div>
     
-            <!-- Footer Bottom Row -->
+            <!-- Footer Bottom -->
             <div class="row">
                 <div class="col-12 text-center mt-3">
                     <hr class="border-light">
@@ -558,60 +707,67 @@
             </div>
         </div>
     </footer>
+      
 
     <!-- script section -->
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
     <script>
         AOS.init();
     </script>
 
     <script>
-        const slides = document.querySelectorAll(".slide");
-        const dots = document.querySelectorAll(".dot");
-        const nextBtn = document.querySelector(".next-btn");
-        const prevBtn = document.querySelector(".prev-btn");
-        let current = 0;
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".slide");
+            const dots = document.querySelectorAll(".dot");
+            const nextBtn = document.querySelector(".next-btn");
+            const prevBtn = document.querySelector(".prev-btn");
 
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.toggle("active", i === index);
-                dots[i].classList.toggle("active-dot", i === index);
-            });
-        }
+            let current = 0;
 
-        nextBtn.addEventListener("click", () => {
-            current = (current + 1) % slides.length;
-            showSlide(current);
-        });
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle("active", i === index);
+                    dots[i].classList.toggle("active-dot", i === index);
+                });
+            }
 
-        prevBtn.addEventListener("click", () => {
-            current = (current - 1 + slides.length) % slides.length;
-            showSlide(current);
-        });
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener("click", () => {
-                current = index;
+            nextBtn.addEventListener("click", () => {
+                current = (current + 1) % slides.length;
                 showSlide(current);
             });
-        });
 
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "ArrowRight") nextBtn.click();
-            if (e.key === "ArrowLeft") prevBtn.click();
-        });
+            prevBtn.addEventListener("click", () => {
+                current = (current - 1 + slides.length) % slides.length;
+                showSlide(current);
+            });
 
-        let autoSlide = setInterval(() => {
-            current = (current + 1) % slides.length;
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    current = index;
+                    showSlide(current);
+                });
+            });
+
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "ArrowRight") nextBtn.click();
+                if (e.key === "ArrowLeft") prevBtn.click();
+            });
+
+            const autoSlide = setInterval(() => {
+                current = (current + 1) % slides.length;
+                showSlide(current);
+            }, 6000);
+
             showSlide(current);
-        }, 6000);
-
-        showSlide(current);
+        });
     </script>
-    
-      
-      
+
+
+
 </body>
 
 
