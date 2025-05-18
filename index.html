@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,16 @@
 <meta name="author" content="Thinkvate Solutions">
 <link rel="canonical" href="https://www.thinkvate.com">
 
-<meta property="og:title" content="Thinkvite Solutions | Empowering Innovation">
+<meta property="og:title" content="Thinkvate Solutions | Empowering Innovation">
 <meta property="og:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
 <meta property="og:image" content="https://www.thinkvate.com/assets/og-image.jpg">
 <meta property="og:url" content="https://www.thinkvate.com">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Thinkvita Solutions | Empowering Innovation">
+<meta name="twitter:title" content="Thinkvata Solutions | Empowering Innovation">
 <meta name="twitter:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
-<meta name="twitter:image" content="https://www.thinkvita.com/assets/twitter-image.jpg">
+<meta name="twitter:image" content="https://www.thinkvate.com/assets/twitter-image.jpg">
 
 <!-- Favicon -->
 
@@ -62,10 +63,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+    <!-- Animation-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script defer>
+        window.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });
+    </script>
 <script src="nav.js"></script>
 </head>
-
-  
 
 
 <body>
@@ -90,7 +99,7 @@
                     <a class="nav-link pl-4" href="#wcuSection" onclick="collapseNavbar()">Why Choose Us</a>
                     <a class="nav-link pl-4" href="#exploreMenuSection" onclick="collapseNavbar()">Our Services</a>
                     <a class="nav-link pl-4" href="#deliveryPaymentSection" onclick="collapseNavbar()">About Us</a>
-                    <a class="nav-link pl-4" href="#contact-us" onclick="collapseNavbar()">Form</a>
+                    <a class="nav-link pl-4" href="#contact-us" onclick="collapseNavbar()">Get Touch</a>
                     <a class="nav-link pl-2" href="#followUsSection" onclick="collapseNavbar()">Mentors</a>
 
                 </div>
@@ -98,12 +107,12 @@
         </div>
     </nav>
 
-
+    <!-- home-->
     <div>
         <div class="hero" id="homsection">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <h5 class="text-uppercase">Fueling Intelligence. Shaping Tomorrow.</h5>
+                    <h5 class="text-uppercase">Fueling Intelligence, For Shaping Tomorrow.</h5>
                     <h1 class="fw-bold">Empowering Industries through Intelligent Digital Solutions</h1>
                     <div class="hero-buttons">
                         <a href="#about" class="btn btn-learn">Learn More</a>
@@ -144,52 +153,44 @@
                 <h1 class="heading-color service-color section-title">Our Product</h1>
                 <h3 class="diligince-color" id="changingText">Meet Diligince.ai</h3>
                 <p class="mb-5 paragraph">
-                    Diligince.ai is India’s first AI-driven industrial ecosystem platform, leveraging proprietary
-                    matching algorithms to
-                    connect businesses with verified service providers, domain experts, and vendors—cutting procurement
-                    time by 60% and
-                    boosting match accuracy by 85%.
+                    Diligince.ai is India’s first AI-driven industrial ecosystem platform, leveraging proprietary matching
+                    algorithms
+                    to connect businesses with verified service providers, domain experts, and vendors—cutting procurement time
+                    by
+                    60% and boosting match accuracy by 85%.
                 </p>
-
+        
                 <div class="slider">
-                    <button class="nav-btn prev-btn" aria-label="Previous Slide">❮</button>
-
+                    <button class="nav-btn prev-btn" onclick="prevSlide()" aria-label="Previous Slide">❮</button>
+        
                     <div class="slide active">
                         <i class="bi bi-cpu"></i>
                         <h5>Smart Matching</h5>
-                        <p class="paragraph">our AI evaluates 50+ parameters to recommend the ideal service providers,
-                            vendors, and specialists for your specific
-                            industrial requirements.</p>
+                        <p class="paragraph">Our AI evaluates 50+ parameters to recommend the ideal service providers, vendors,
+                            and
+                            specialists for your specific industrial requirements.</p>
                     </div>
+        
                     <div class="slide">
                         <i class="bi bi-bar-chart"></i>
                         <h5>Verified Ecosystem</h5>
-                        <p class="paragraph">Every professional and vendor undergoes a rigorous 3-step verification
-                            process, ensuring you connect only with trusted,
-                            qualified partners.</p>
+                        <p class="paragraph">Every professional and vendor undergoes a rigorous 3-step verification process,
+                            ensuring
+                            you connect only with trusted, qualified partners.</p>
                     </div>
+        
                     <div class="slide">
                         <i class="bi bi-graph-up"></i>
                         <h5>Performance Analytics</h5>
-                        <p class="paragraph">Track vendor performance, project milestones, and cost metrics in real-time
-                            with customizable dashboards tailored to
-                            your industry needs.</p>
+                        <p class="paragraph">Track vendor performance, project milestones, and cost metrics in real-time with
+                            customizable dashboards tailored to your industry needs.</p>
                     </div>
-
-                    <button class="nav-btn next-btn" aria-label="Next Slide">❯</button>
-                </div>
-
-                <div class="dots text-center mt-3 pb-2">
-                    <span class="dot" role="button" tabindex="0" aria-label="Go to slide 1"></span>
-                    <span class="dot active-dot" role="button" tabindex="0" aria-label="Go to slide 2"></span>
-                    <span class="dot" role="button" tabindex="0" aria-label="Go to slide 3"></span>
-
-
+        
+                    <button class="nav-btn next-btn" onclick="nextSlide()" aria-label="Next Slide">❯</button>
                 </div>
             </div>
-
         </div>
-
+          
 
         <!-- Join Community Section -->
 
@@ -346,7 +347,7 @@
 
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="OEM's.png" class="card-img-top" alt="OEMs & Spare Parts">
+                        <img src="OEM's.png" alt="OEMs & Spare Parts" wclass="card-img-top">
                         <div class="card-body text-center">
                             <h5 class="card-title">OEMs & Spare Parts</h5>
                             <p class="card-text">Marketplace for equipment vendors and spares</p>
@@ -370,7 +371,7 @@
 
     <!-- About us section -->
 
-    <div class="healthy-food-section pt-5 pb-5" id="deliveryPaymentSection">
+    <div class="About-section pt-5 pb-5" id="deliveryPaymentSection">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <!-- Video Column -->
@@ -384,9 +385,9 @@
                 
                 <!-- Text Content Column -->
                 <div class="col-12 col-md-12">
-                    <h1 class="healthy-food-section-heading mb-3 service-color">About Us</h1>
-                    <p class="healthy-food-section-description">
-                        Established in 2019 by industry veterans with deep expertise in control and instrumentation,
+                    <h1 class="About-section-heading mb-3 service-color">About Us</h1>
+                    <p class="About-section-description">
+                        Established in 2023 by industry veterans with deep expertise in control and instrumentation,
                         Thinkvate Solutions Pvt.
                         Ltd. strategically pivoted in 2025 to become a digital-first technology leader focused on
                         transforming India’s
@@ -408,7 +409,7 @@
                         <div class="timeline-item mb-4">
                             <div class="timeline-content">
                                 <h3>Founded Thinkvate</h3>
-                                <p class="year">2019</p>
+                                <p class="year">2023</p>
                                 <p class="paragraph">Launched with a mission to empower MSMEs & Mid-Size-Industries
                                     through AI.</p>
                             </div>
@@ -450,7 +451,7 @@
                 across India and Saudi Arabia. His deep understanding of industrial operations and vendor ecosystems led
                 to the
                 creation
-                of <strong>Diligence.ai</strong>—India’s first AI-powered platform designed to streamline vendor
+                of <strong>Diligince.ai</strong>—India’s first AI-powered platform designed to streamline vendor
                 management and
                 connect industries with
                 verified service providers.
@@ -464,8 +465,6 @@
             </p>
         </div>
     </div>
-
-
 
     <!-- mentor section  -->
 
@@ -585,20 +584,6 @@
     
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
                     <div class="team-card text-center">
-                        <img src="Anusha.jpg" alt="DevOps Engineer" class="team-photo">
-                        <div class="team-info">
-                            <p class="team-role">AI & ML Engineer</p>
-                        </div>
-                        <p class="team-name">Anusha</p>
-                        <p class="team-description">B.Tech graduate in CSE with strong expertise in Python, machine learning, and deep learning. Currently working
-                        as an AI & ML Engineer, leveraging tools like n8n for workflow automation and integration. Experienced in building and
-                        deploying scalable AI-driven solutions using frameworks such as TensorFlow, PyTorch, and OpenCV to solve real-world
-                        problems.</p>
-                    </div>
-                </div>
-    
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
                         <img src="mani.webp" alt="AI/ML Engineer" class="team-photo">
                         <div class="team-info">
                             <p class="team-role">Testing Engineer</p>
@@ -711,60 +696,32 @@
 
     <!-- script section -->
 
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-
     <script>
-        AOS.init();
+        const slides = document.querySelectorAll(".slide");
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Initialize first slide
+        showSlide(currentSlide);
     </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const slides = document.querySelectorAll(".slide");
-            const dots = document.querySelectorAll(".dot");
-            const nextBtn = document.querySelector(".next-btn");
-            const prevBtn = document.querySelector(".prev-btn");
-
-            let current = 0;
-
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                    slide.classList.toggle("active", i === index);
-                    dots[i].classList.toggle("active-dot", i === index);
-                });
-            }
-
-            nextBtn.addEventListener("click", () => {
-                current = (current + 1) % slides.length;
-                showSlide(current);
-            });
-
-            prevBtn.addEventListener("click", () => {
-                current = (current - 1 + slides.length) % slides.length;
-                showSlide(current);
-            });
-
-            dots.forEach((dot, index) => {
-                dot.addEventListener("click", () => {
-                    current = index;
-                    showSlide(current);
-                });
-            });
-
-            document.addEventListener("keydown", (e) => {
-                if (e.key === "ArrowRight") nextBtn.click();
-                if (e.key === "ArrowLeft") prevBtn.click();
-            });
-
-            const autoSlide = setInterval(() => {
-                current = (current + 1) % slides.length;
-                showSlide(current);
-            }, 6000);
-
-            showSlide(current);
-        });
-    </script>
+      
+    
+    
 
 
 
