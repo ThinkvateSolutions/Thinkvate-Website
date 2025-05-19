@@ -2,45 +2,69 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinkvate Solutions | Empowering Innovation</title>
+    <meta name="description"
+        content="Thinkvate Solutions provides cutting-edge digital services to help businesses innovate and grow.">
+    <meta name="keywords" content="Thinkvate, digital solutions, IT services, web development, software consulting">
+    <meta name="author" content="Thinkvate Solutions">
+    <link rel="canonical" href="https://www.thinkvate.com">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thinkvate Solutions | Empowering Innovation</title>
-<meta name="description"
-    content="Thinkvate Solutions provides cutting-edge digital services to help businesses innovate and grow.">
-<meta name="keywords" content="Thinkvate, digital solutions, IT services, web development, software consulting">
-<meta name="author" content="Thinkvate Solutions">
-<link rel="canonical" href="https://www.thinkvate.com">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Thinkvate Solutions | Empowering Innovation">
+    <meta property="og:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
+    <meta property="og:image" content="https://www.thinkvate.com/assets/og-image.jpg">
+    <meta property="og:url" content="https://www.thinkvate.com">
+    <meta property="og:type" content="website">
 
-<meta property="og:title" content="Thinkvate Solutions | Empowering Innovation">
-<meta property="og:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
-<meta property="og:image" content="https://www.thinkvate.com/assets/og-image.jpg">
-<meta property="og:url" content="https://www.thinkvate.com">
-<meta property="og:type" content="website">
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thinkvate Solutions | Empowering Innovation">
+    <meta name="twitter:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
+    <meta name="twitter:image" content="https://www.thinkvate.com/assets/twitter-image.jpg">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Thinkvata Solutions | Empowering Innovation">
-<meta name="twitter:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
-<meta name="twitter:image" content="https://www.thinkvate.com/assets/twitter-image.jpg">
+    <!-- Favicon -->
 
-<!-- Favicon -->
+    <!-- Preconnects for Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="stylesheet" href="Thinkvate.css">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Self-hosted fonts recommended. External fallback kept for compatibility -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 
-<!-- Content Security Policy -->
-<meta http-equiv="Content-Security-Policy" content="
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Removed Font Awesome to reduce resource load -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Thinkvate.css">
+
+    <!-- AOS Animation - Deferred -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script>
+        window.addEventListener('load', () => {
+            const aosCSS = document.createElement('link');
+            aosCSS.rel = 'stylesheet';
+            aosCSS.href = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css';
+            document.head.appendChild(aosCSS);
+
+            const aosJS = document.createElement('script');
+            aosJS.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
+            aosJS.onload = () => {
+                AOS.init({ once: true, disable: 'phone' });
+            };
+            document.body.appendChild(aosJS);
+        });
+    </script>
+
+    
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
       script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com 'unsafe-inline';
       style-src 'self' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
@@ -49,39 +73,31 @@
       connect-src 'self';
       frame-src 'self' https://docs.google.com;
     ">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), fullscreen=(self)">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), fullscreen=(self)">
 
-<!-- Required JS for Bootstrap 4 Navbar and Components -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+    <!-- Required JS for Bootstrap 4 -->
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="nav.js" defer></script>
 
-    <!-- Animation-->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
-    <script defer>
-        window.addEventListener('DOMContentLoaded', function () {
-            AOS.init();
-        });
-    </script>
-<script src="nav.js"></script>
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="hero-image.jpg" fetchpriority="high">
 </head>
-
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
 
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center">
                 <img src="Logo.png" alt="logo" class="logo me-2">
                 <span class="webname"> Thinkvate Solutions</span>
             </a>
@@ -99,8 +115,8 @@
                     <a class="nav-link pl-4" href="#wcuSection" onclick="collapseNavbar()">Why Choose Us</a>
                     <a class="nav-link pl-4" href="#exploreMenuSection" onclick="collapseNavbar()">Our Services</a>
                     <a class="nav-link pl-4" href="#deliveryPaymentSection" onclick="collapseNavbar()">About Us</a>
-                    <a class="nav-link pl-4" href="#contact-us" onclick="collapseNavbar()">Get Touch</a>
-                    <a class="nav-link pl-2" href="#followUsSection" onclick="collapseNavbar()">Mentors</a>
+                    <a class="nav-link pl-4" href="#followUsSection" onclick="collapseNavbar()">Mentors</a>
+                    <a class="nav-link pl-2" href="#contact-us" onclick="collapseNavbar()">Contact Us</a>
 
                 </div>
             </div>
@@ -112,15 +128,12 @@
         <div class="hero" id="homsection">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <h5 class="text-uppercase">Fueling Intelligence, For Shaping Tomorrow.</h5>
+                    <h5 class="text-uppercase">Fueling Intelligence For Shaping Tomorrow.</h5>
                     <h1 class="fw-bold">Empowering Industries through Intelligent Digital Solutions</h1>
-                    <div class="hero-buttons">
-                        <a href="#about" class="btn btn-learn">Learn More</a>
-                        <a href="#contact-us" class="btn btn-join">Join Our Community</a>
-                    </div>
                 </div>
             </div>
         </div>
+      
 
         <!-- Who We Are Section -->
 
@@ -128,20 +141,20 @@
             <div class="container">
                 <div class="row g-md-4 align-items-center">
                     <div class="col-md-6 col-12 mb-4 mb-md-0">
-                        <h2 class="font-size service-color ">Who We Are</h2>
+                        <h2 class="font-size service-color ">What we do</h2>
                         <p class="paragraph"><strong>Thinkvate Solutions</strong> is an industrial-tech company driving
                             digital transformation in India’s manufacturing, energy, and
                             infrastructure sectors. Founded by industry veterans with over 20 years of experience, we
                             combine deep domain expertise
                             with cutting-edge AI to solve real-world operational challenges. Our flagship platform,
-                            diligince.ai, is India’s first
+                            diligince.ai.
                             AI-powered industrial ecosystem—connecting manufacturers with verified service providers,
                             logistics vendors, and expert
                             professionals through intelligent matching and secure collaboration.</p>
                     </div>
                     <div class="col-md-6 col-12 text-center ms-md-4">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" class="img-fluid"
-                            alt="Team Illustration">
+                        <img src="who we are img.jpeg" class="img-fluid"
+                            alt="Team Illustration" width="580" height="253" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -191,17 +204,15 @@
             </div>
         </div>
           
-
         <!-- Join Community Section -->
 
-        <div class="section2 bg-light text-center" id="community">
+       <!-- <div class="section2 bg-light text-center" id="community">
             <div class="container">
                 <h2 class="colorpattern">Be Part of the Innovation</h2>
                 <p class="paragraph">Join a community of creators, thinkers, and innovators.</p>
                 <a href="#contact-us" class="btn join-btn mt-3">Join Our Mission</a>
-
             </div>
-        </div>
+        </div> --> 
 
     </div>
 
@@ -275,7 +286,7 @@
 
     <!-- our service section -->
 
-    <div class="our-services-section  py-5" id="exploreMenuSection">
+    <div class="our-services-section py-5" id="exploreMenuSection">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
@@ -284,90 +295,104 @@
                 </div>
             </div>
             <div class="row g-4">
-
+    
+                <!-- Manufacturing -->
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="Manufacturing.png" class="card-img-top" alt="Manufacturing">
+                        <img src="Manufacturing.png" class="card-img-top" alt="Manufacturing" width="380" height="253"
+                            loading="lazy">
                         <div class="card-body text-center">
                             <h5 class="card-title">Manufacturing</h5>
                             <p class="card-text">Streamlining vendor connections for production plants</p>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Energy -->
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="Energy_AI.png" class="card-img-top" alt="Energy">
+                        <img src="Energy_AI.png" class="card-img-top" alt="Energy" width="380" height="380" loading="lazy">
                         <div class="card-body text-center">
                             <h5 class="card-title">Energy</h5>
                             <p class="card-text">Supporting power plants with AI and workforce solutions</p>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Oil & Gas -->
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="Oil.png" class="card-img-top" alt="Oil & Gas">
+                        <img src="Oil.png" class="card-img-top" alt="Oil & Gas" width="380" height="253" loading="lazy">
                         <div class="card-body text-center">
                             <h5 class="card-title">Oil & Gas</h5>
                             <p class="card-text">Helping with EPC contracts, materials, and logistics</p>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Infrastructure -->
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="Infrastructure.png" class="card-img-top" alt="Infrastructure">
+                        <img src="Infrastructure.png" class="card-img-top" alt="Infrastructure" width="380" height="380"
+                            loading="lazy">
                         <div class="card-body text-center">
                             <h5 class="card-title">Infrastructure</h5>
                             <p class="card-text">Connecting consultants and contractors in real estate</p>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Engineering Services -->
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="Engineer.png" class="card-img-top" alt="Engineering Services">
+                        <img src="Engineer.png" class="card-img-top" alt="Engineering Services" width="380" height="253"
+                            loading="lazy">
                         <div class="card-body text-center">
                             <h5 class="card-title">Engineering Services</h5>
                             <p class="card-text">Sourcing technical experts and specialists</p>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Industrial Logistics -->
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="Industrail.jpg" class="card-img-top" alt="Industrial Logistics">
+                        <img src="Industrail.jpg" class="card-img-top" alt="Industrial Logistics" width="380" height="253"
+                            loading="lazy">
                         <div class="card-body text-center">
                             <h5 class="card-title">Industrial Logistics</h5>
                             <p class="card-text">Enabling crane, warehouse, and transport booking</p>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- OEMs & Spare Parts -->
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="OEM's.png" alt="OEMs & Spare Parts" wclass="card-img-top">
+                        <img src="OEM's.png" class="card-img-top" alt="OEMs & Spare Parts" width="380" height="253"
+                            loading="lazy">
                         <div class="card-body text-center">
                             <h5 class="card-title">OEMs & Spare Parts</h5>
                             <p class="card-text">Marketplace for equipment vendors and spares</p>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- MSMEs & SMEs -->
                 <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="card service-card h-100 border-1 shadow-sm">
-                        <img src="MSME.png" class="card-img-top" alt="MSMEs & SMEs">
+                        <img src="MSME.png" class="card-img-top" alt="MSMEs & SMEs" width="380" height="253" loading="lazy">
                         <div class="card-body text-center">
                             <h5 class="card-title">MSMEs & SMEs</h5>
                             <p class="card-text">Driving digital adoption and AI enablement</p>
                         </div>
                     </div>
                 </div>
+    
             </div>
         </div>
     </div>
-
+      
 
     <!-- About us section -->
 
@@ -387,20 +412,16 @@
                 <div class="col-12 col-md-12">
                     <h1 class="About-section-heading mb-3 service-color">About Us</h1>
                     <p class="About-section-description">
-                        Established in 2023 by industry veterans with deep expertise in control and instrumentation,
-                        Thinkvate Solutions Pvt.
-                        Ltd. strategically pivoted in 2025 to become a digital-first technology leader focused on
-                        transforming India’s
-                        industrial landscape.
-
-                        As a government-recognized MSME (UDYAM-AP-10-0075552), we develop AI-powered solutions that
-                        address critical operational
-                        challenges across industrial sectors. Our mission is to drive measurable improvements in
-                        efficiency, simplify vendor
-                        management, and enable seamless collaboration through smart, data-driven platforms. By combining
-                        domain expertise with
-                        intelligent automation, we are helping industries embrace digital transformation and thrive in
-                        an increasingly connected
+                        Founded in 2019 and officially incorporated in 2023, Thinkvate Solutions Pvt. Ltd. is a government-recognized MSME
+                        (UDYAM-AP-10-0075552) led by seasoned professionals in control and instrumentation. In 2024, we initiated our flagship
+                        digital transformation journey, and by 2025, strategically evolved into a digital-first AI technology company.
+                        
+                        Thinkvate specializes in developing AI-driven SaaS platforms designed to optimize industrial operations, improve vendor
+                        lifecycle management, and enhance decision-making through data intelligence. Our solutions address real-world challenges
+                        across India’s mid-sized and MSME manufacturing landscape.
+                        
+                        With a mission to accelerate industrial digitization, we blend deep domain expertise with smart automation—delivering
+                        measurable outcomes, operational resilience, and a competitive edge for modern enterprises in an increasingly connected
                         economy.
                     </p>
 
@@ -409,9 +430,9 @@
                         <div class="timeline-item mb-4">
                             <div class="timeline-content">
                                 <h3>Founded Thinkvate</h3>
-                                <p class="year">2023</p>
-                                <p class="paragraph">Launched with a mission to empower MSMEs & Mid-Size-Industries
-                                    through AI.</p>
+                                <p class="year">2019</p>
+                                <p class="paragraph">Founded in 2019, Thinkvate launched in 2023 to help MSMEs and mid-sized businesses adopt AI solutions. By mid-2024, we
+                                expanded into projects and training, enabling smarter, tech-driven growth across industries.</p>
                             </div>
                             <div class="timeline-dot"></div>
                         </div>
@@ -419,8 +440,9 @@
                             <div class="timeline-content pl-2">
                                 <h3>Diligince.ai MVP(Development Stage)</h3>
                                 <p class="year">2025</p>
-                                <p class="paragraph">MSME registration and realignment as a digital-first
-                                    company,Started building our flagship AI SaaS product.</p>
+                                <p class="paragraph">In 2025, we began our MSME registration and transitioned toward a digital-first model. This marked the start of
+                                developing our flagship AI SaaS platform, designed to drive intelligent business automation.
+                                </p>
                             </div>
                             <div class="timeline-dot"></div>
                         </div>
@@ -472,73 +494,86 @@
         <div class="container">
             <h1 class="mentors-heading section-title text-center mb-5">Our Mentors</h1>
             <div class="row justify-content-center">
-                <!-- Mentor Card -->
-                <div class="col-10 col-md-6 col-lg-4  text-center mentor-card mb-4">
+                <!-- Mentor Card 1 -->
+                <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
-                        <img src="Arun.jpg" alt="Project Manager" class="mentor-img" />
+                        <img src="Arun.jpg" alt="Project Manager" class="mentor-img" loading="lazy" width="300" height="300"
+                            style="aspect-ratio: 1/1;" />
                         <div class="mentor-overlay">
                             <p class="mentor-role">Project Manager</p>
                             <p class="mentor-details">A seasoned engineering professional with 15+ years of experience
-                                in
-                                DevOps, automation testing, and technical training.
-                                Holds an M.Tech in Instrumentation and specializes in blending technical mentoring with
-                                stress management coaching.
-                                Currently driving innovation and efficiency as a DevOps Engineer.</p>
+                                in DevOps, automation testing, and technical training. Holds an M.Tech in Instrumentation
+                                and
+                                specializes in blending technical mentoring with stress management coaching. Currently
+                                driving
+                                innovation and efficiency as a DevOps Engineer.</p>
                         </div>
                     </div>
-                    <p class="mentor-name mt-2">G.Arun kumar</p>
+                    <p class="mentor-name mt-2">G.Arun Kumar</p>
                 </div>
+    
+                <!-- Mentor Card 2 -->
                 <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
-                        <img src="female.jpg" alt="Manager" class="mentor-img" />
+                        <img src="female.jpg" alt="Manager" class="mentor-img" loading="lazy" width="300" height="300"
+                            style="aspect-ratio: 1/1;" />
                         <div class="mentor-overlay">
-                            <p class="mentor-role">Manager in multinational company </p>
-                            <p class="mentor-details">Bringing over 15 years of leadership in IT service delivery and regulatory compliance, I mentor professionals on
-                            building resilient, audit-ready operations. From driving successful SOC 2 and ISO 27001 audits to optimizing ITSM
-                            practices and strengthening cloud and access governance, I help organizations align technology with trust,
-                            performance, and compliance.</p>
+                            <p class="mentor-role">Manager in multinational company</p>
+                            <p class="mentor-details">Bringing over 15 years of leadership in IT service delivery and
+                                regulatory compliance, I mentor professionals on building resilient, audit-ready
+                                operations...
+                                optimizing ITSM practices and strengthening cloud and access governance, I help
+                                organizations align
+                                technology with trust, performance, and compliance.</p>
                         </div>
                     </div>
                     <p class="mentor-name mt-2">Anitha K</p>
                 </div>
+    
+                <!-- Mentor Card 3 -->
                 <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
-                        <img src="Santosh.jpg" alt="Full-Stack Developer" class="mentor-img" />
+                        <img src="Santosh.jpg" alt="Full-Stack Developer" class="mentor-img" loading="lazy" width="300"
+                            height="300" style="aspect-ratio: 1/1;" />
                         <div class="mentor-overlay">
                             <p class="mentor-role">Full-Stack Developer</p>
                             <p class="mentor-details">I have over 10 years of experience in the software industry,
-                                specializing in full-stack development, solution
-                                architecture, and project management. As a Project Manager at a multinational
-                                corporation, I
-                                lead successful project
-                                delivery while also providing freelance IT consulting and development services.
-                            </p>
+                                specializing in full-stack development, solution architecture, and project management. As a
+                                Project Manager at a multinational corporation, I lead successful project delivery while
+                                also
+                                providing freelance IT consulting and development services.</p>
                         </div>
                     </div>
-                    <p class="mentor-name mt-2">G santosh kumar </p>
+                    <p class="mentor-name mt-2">G Santosh Kumar</p>
                 </div>
+    
+                <!-- Mentor Card 4 -->
                 <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
-                        <img src="hari.jpg" alt="Director"
-                            class="mentor-img" />
+                        <img src="hari.jpg" alt="Director" class="mentor-img" loading="lazy" width="300" height="300"
+                            style="aspect-ratio: 1/1;" />
                         <div class="mentor-overlay">
-                            <p class="mentor-role">Director in multiple national company</p>
-                            <p class="mentor-details">With 20+ years in IT, I lead global SAP implementation programs as a Director in a multinational company. I specialize
-                            in project delivery, program management, and vendor coordination across regions including the US, UK, Germany, and Hong
-                            Kong. My experience spans FMCG, manufacturing, healthcare, and sports domains.</p>
+                            <p class="mentor-role">Director in multiple national companies</p>
+                            <p class="mentor-details">With 20+ years in IT, I lead global SAP implementation programs as a
+                                Director in a multinational company. I specialize in project delivery, program management,
+                                and
+                                vendor coordination across regions including the US, UK, Germany, and Hong Kong. My
+                                experience
+                                spans FMCG, manufacturing, healthcare, and sports domains.</p>
                         </div>
                     </div>
-                    <p class="mentor-name mt-2">Hari Kirshna</p> 
+                    <p class="mentor-name mt-2">Hari Krishna</p>
                 </div>
             </div>
         </div>
     </div>
+    
+    
 
-
-    <!-- Technical team section -->
+    <!-- Core Technology Experts -->
     <div class="team-section py-5">
         <div class="container">
-            <h2 class="text-center section-title mb-5 service-color">Technical Core Team</h2>
+            <h2 class="text-center section-title mb-5 service-color">Core Technology Experts</h2>
             <div class="row justify-content-center">
     
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
@@ -559,7 +594,7 @@
                     <div class="team-card text-center">
                         <img src="Radha.jpg" alt="Backend Engineer" class="team-photo">
                         <div class="team-info">
-                            <p class="team-role">Backend Engineer</p>
+                            <p class="team-role">Backend Developer</p>
                         </div>
                         <p class="team-name">Radha</p>
                         <p class="team-description">B.Tech graduate in CSE (AI & ML) with strong expertise in backend development. Skilled in building robust APIs using SQL
@@ -586,7 +621,7 @@
                     <div class="team-card text-center">
                         <img src="mani.webp" alt="AI/ML Engineer" class="team-photo">
                         <div class="team-info">
-                            <p class="team-role">Testing Engineer</p>
+                            <p class="team-role">Automation Test Engineer</p>
                         </div>
                         <p class="team-name">Manikanta</p>
                         <p class="team-description">B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep learning. Currently working as
@@ -608,14 +643,15 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center mb-4">
-                    <h2 class="contact-title ">Get in Touch</h2>
-                    <p class="contact-subtitle paragraph">We’re here to help and answer any question you might have.</p>
+                    <h2 class="contact-title service-color">Join Our Network</h2>
+                    <p class="contact-subtitle paragraph">We invite qualified professionals and vendors to register securely. Your privacy is our priority as we look forward to a
+                    successful partnership.</p>
                 </div>
                 <div class="col-lg-8 col-md-10">
 
                     <div class="text-center">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSezzXfz9ZD0jAXSSbdXPmshL7KgztRqwnsbwmuPou8w-tqw5A/viewform?embedded=true"
-                            target="_blank"><button>Contact Us</button></a>
+                            target="_blank"><button>Join Us</button></a>
                     </div>
 
                 </div>
@@ -638,17 +674,19 @@
                         <li><a href="#wcuSection" class="text-white text-decoration-none d-block">Why Choose Us</a></li>
                         <li><a href="#exploreMenuSection" class="text-white text-decoration-none d-block">Our Services</a>
                         </li>
+                        <li><a href="#deliveryPaymentSection" class="text-white text-decoration-none d-block">About Us</a>
+                        </li>
+                        <li><a href="#followUsSection" class="text-white text-decoration-none d-block">Mentors</a></li>
                     </ul>
                 </div>
     
                 <!-- Column 2: Connect -->
                 <div class="col-12 col-md-4 mb-4 allignment">
-                    <h5 class="mb-3">Connect</h5>
+                    <Center><h5 class="mb-3">Connect with Us</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#deliveryPaymentSection" class="text-white text-decoration-none d-block">About Us</a>
+                        <li><a href="" class="text-white text-decoration-none d-block">contact@thinkvate.com</a>
                         </li>
-                        <li><a href="#followUsSection" class="text-white text-decoration-none d-block">Mentors</a></li>
-                    </ul>
+                        </ul></Center>
     
                     <!-- Social Media Icons (Accessible) -->
                     <div class="d-flex justify-content-center mt-3">
@@ -670,18 +708,16 @@
                 </div>
     
                 <!-- Column 3: Company Details -->
-                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
-                    <h5 class="mb-3">Company Details</h5>
-                    <p class="mb-1 fw-bold">Thinkvate Solutions Pvt. Ltd</p>
-                    <p class="mb-1">contact@thinkvate.com</p>
-                    <p class="mb-0 address-text">
-                        CIN: U74999AP2019PTC111774<br>
-                        MSME Reg.No: UDYAM-AP-10-0075552<br>
-                        Visakhapatnam - 530051
-                    </p>
+                <div class="col-12 col-md-4 mb-4 company-details">
+                    <h5 class="mb-3 text-center text-md-start">Company Details</h5>
+                    <div class="text-center text-md-start">
+                        <p class="mb-2 fw-bold">Thinkvate Solutions Pvt. Ltd</p>
+                        <p class="mb-2">CIN: U74999AP2019PTC111774</p>
+                        <p class="mb-2">MSME Reg.No: UDYAM-AP-10-0075552</p>
+                        <p class="mb-0">Visakhapatnam - 530051</p>
+                    </div>
                 </div>
-    
-            </div>
+                  
     
             <!-- Footer Bottom -->
             <div class="row">
