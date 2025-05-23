@@ -142,7 +142,7 @@ small,
 /* home */
 
 .hero {
-  background: url('hero-image.webp') center center/cover no-repeat;
+  background: url('hero.webp') center center/cover no-repeat;
   min-height: 100vh;
   background-attachment: fixed;
   background-size: cover;
