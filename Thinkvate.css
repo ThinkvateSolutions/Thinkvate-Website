@@ -21,7 +21,7 @@
 
   .webname {
 
-    font-size: 22px;
+    font-size: 21px;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
@@ -252,7 +252,7 @@ small,
 @media (max-width: 575px) {
   .hero {
     padding: 40px 10px;
-    min-height: 70vh;
+    min-height: 80vh;
     font-size: 14px;
   }
 
@@ -266,7 +266,6 @@ small,
 }
 
 /* who we are */
-/* Section base */
 .whoare-section {
   background-color: #0f172a;
   color: #e2e8f0;
@@ -1072,6 +1071,8 @@ small,
   overflow: hidden;
   cursor: pointer;
   border: 1px solid #e5e7eb;
+  background-color: #fff;
+  margin: 8px;
 }
 
 .team-card:hover {

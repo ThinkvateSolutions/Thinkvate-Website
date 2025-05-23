@@ -2,66 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thinkvate Solutions | Empowering Innovation</title>
     <meta name="description"
-        content="Thinkvate Solutions provides cutting-edge digital services to help businesses innovate and grow.">
-    <meta name="keywords" content="Thinkvate, digital solutions, IT services, web development, software consulting">
-    <meta name="author" content="Thinkvate Solutions">
-    <link rel="canonical" href="https://www.thinkvate.com">
+        content="Thinkvate Solutions provides cutting-edge digital services to help businesses innovate and grow." />
+    <meta name="keywords" content="Thinkvate, digital solutions, IT services, web development, software consulting" />
+    <meta name="author" content="Thinkvate Solutions" />
+    <link rel="canonical" href="https://www.thinkvate.com" />
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Thinkvate Solutions | Empowering Innovation">
-    <meta property="og:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
-    <meta property="og:image" content="https://www.thinkvate.com/assets/og-image.jpg">
-    <meta property="og:url" content="https://www.thinkvate.com">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thinkvate Solutions | Empowering Innovation" />
+    <meta property="og:description" content="Discover how Thinkvate helps businesses with innovative tech solutions." />
+    <meta property="og:image" content="https://www.thinkvate.com/assets/og-image.jpg" />
+    <meta property="og:url" content="https://www.thinkvate.com" />
+    <meta property="og:type" content="website" />
 
     <!-- Twitter Card Meta -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Thinkvate Solutions | Empowering Innovation">
-    <meta name="twitter:description" content="Discover how Thinkvate helps businesses with innovative tech solutions.">
-    <meta name="twitter:image" content="https://www.thinkvate.com/assets/twitter-image.jpg">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Thinkvate Solutions | Empowering Innovation" />
+    <meta name="twitter:description"
+        content="Discover how Thinkvate helps businesses with innovative tech solutions." />
+    <meta name="twitter:image" content="https://www.thinkvate.com/assets/twitter-image.jpg" />
 
     <!-- Favicon -->
+    <!-- Add your favicon link here -->
 
     <!-- Preconnects for Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Self-hosted fonts recommended. External fallback kept for compatibility -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts Async Load -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet" />
+    </noscript>
 
+    <!-- Stylesheets Async Preload -->
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" as="style"
+        onload="this.rel='stylesheet'"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <noscript>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            crossorigin="anonymous" />
+    </noscript>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style"
+        onload="this.rel='stylesheet'" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </noscript>
 
-    <!-- Removed Font Awesome to reduce resource load -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="Thinkvate.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" as="style"
+        onload="this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    </noscript>
 
-    <!-- AOS Animation - Deferred -->
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="preload" href="Thinkvate.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="Thinkvate.css" />
+    </noscript>
+
+    <!-- AOS Animation - Deferred Load -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script>
-        window.addEventListener('load', () => {
-            const aosCSS = document.createElement('link');
-            aosCSS.rel = 'stylesheet';
-            aosCSS.href = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css';
+        window.addEventListener("load", () => {
+            const aosCSS = document.createElement("link");
+            aosCSS.rel = "stylesheet";
+            aosCSS.href = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css";
             document.head.appendChild(aosCSS);
 
-            const aosJS = document.createElement('script');
-            aosJS.src = 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js';
+            const aosJS = document.createElement("script");
+            aosJS.src = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js";
             aosJS.onload = () => {
-                AOS.init({ once: true, disable: 'phone' });
+                AOS.init({ once: true, disable: "phone" });
             };
             document.body.appendChild(aosJS);
         });
     </script>
-
-    
 
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="
@@ -72,12 +94,11 @@
         img-src 'self' https://cdn-icons-png.flaticon.com https://randomuser.me data:;
         connect-src 'self';
         frame-src 'self' https://docs.google.com;
-      ">
-  
+      " />
 
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), fullscreen=(self)">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), fullscreen=(self)" />
 
     <!-- Required JS for Bootstrap 4 -->
     <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -91,17 +112,11 @@
         crossorigin="anonymous"></script>
     <script src="nav.js" defer></script>
 
-    <!-- Preload LCP Image -->
-    <link rel="preload" as="image" href="hero.webp" type="image/webp" fetchpriority="high">
-    <link rel="preload" as="image" href="whoare.webp" type="image/webp" fetchpriority="high">
-
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
-
+    <!-- Preload LCP Images -->
+    <link rel="preload" as="image" href="hero.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="whoare.webp" type="image/webp" fetchpriority="high" />
 </head>
+  
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -135,433 +150,444 @@
     </nav>
 
     <!-- home-->
-    <div>
-        <div class="hero" id="homsection">
+    <main>
+        <section class="hero" id="homsection">
             <div class="hero-overlay">
                 <div class="hero-content">
                     <h5 class="text-uppercase">Fueling Intelligence For Shaping Tomorrow.</h5>
                     <h1 class="fw-bold">Empowering Industries through Intelligent Digital Solutions</h1>
                 </div>
             </div>
-        </div>
-      
-
+        </section>
+    
         <!-- Who We Are Section -->
         <section class="whoare-section">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-6 content-area">
+                    <article class="col-lg-6 content-area">
                         <h2 class="sectiontitle">What We Do</h2>
                         <p class="section-subtitle">
                             Transforming industries with AI-powered intelligence
                         </p>
                         <p class="section-text">
-                            <strong>Thinkvate Solutions</strong> is an industrial-tech company catalyzing digital transformation
+                            <strong>Thinkvate Solutions</strong> is an industrial-tech company catalyzing digital
+                            transformation
                             in India's manufacturing, energy, and infrastructure sectors.
                         </p>
                         <p class="section-text">
-                            With over 20 years of domain expertise, our team integrates operational excellence and AI innovation
+                            With over 20 years of domain expertise, our team integrates operational excellence and AI
+                            innovation
                             to solve mission-critical challenges at scale.
                         </p>
                         <p class="section-text">
-                            Our platform, <strong>diligince.ai</strong>, is a secure ecosystem that connects manufacturers with
-                            vetted service providers, logistics vendors, and expert consultants—powered by intelligent matching
+                            Our platform, <strong>diligince.ai</strong>, is a secure ecosystem that connects manufacturers
+                            with
+                            vetted service providers, logistics vendors, and expert consultants—powered by intelligent
+                            matching
                             and collaboration.
                         </p>
                         <a href="#platform" class="btn-primary">Explore Diligince.ai</a>
-                    </div>
-                    <div class="col-lg-5 text-center">
+                    </article>
+                    <figure class="col-lg-5 text-center">
                         <picture>
                             <source srcset="whoare.webp" type="image/webp">
                             <source srcset="whoare.jpg" type="image/jpeg">
-                            <img src="whoare.jpg" alt="AI in Industry" class="illustration-img" loading="lazy" decoding="async" width="500"
-                                height="400">
+                            <img src="whoare.jpg" alt="AI in Industry" class="illustration-img" loading="lazy"
+                                decoding="async" width="500" height="400">
                         </picture>
-                    </div>
+                    </figure>
                 </div>
             </div>
         </section>
-          
-          
-
+    
         <!-- Product Intro Section -->
-        <div class="card-slider-wrapper">
+        <section class="card-slider-wrapper">
             <div class="container text-center">
                 <h1 class="heading-color service-color section-title">Our Product</h1>
                 <h3 class="diligince-color" id="changingText">Meet Diligince.ai</h3>
                 <p class="mb-5 paragraph">
                     Diligince.ai is India’s first AI-driven industrial ecosystem platform, leveraging proprietary matching
-                    algorithms
-                    to connect businesses with verified service providers, domain experts, and vendors—cutting procurement time
-                    by
-                    60% and boosting match accuracy by 85%.
+                    algorithms to connect businesses with verified service providers, domain experts, and vendors—cutting
+                    procurement time
+                    by 60% and boosting match accuracy by 85%.
                 </p>
-        
+    
                 <div class="slider">
                     <button class="nav-btn prev-btn" onclick="prevSlide()" aria-label="Previous Slide">❮</button>
-        
-                    <div class="slide active">
+    
+                    <article class="slide active">
                         <i class="bi bi-cpu"></i>
                         <h5>Smart Matching</h5>
-                        <p class="paragraph">Our AI evaluates 50+ parameters to recommend the ideal service providers, vendors,
-                            and
-                            specialists for your specific industrial requirements.</p>
-                    </div>
-        
-                    <div class="slide">
+                        <p class="paragraph">Our AI evaluates 50+ parameters to recommend the ideal service providers,
+                            vendors,
+                            and specialists for your specific industrial requirements.</p>
+                    </article>
+    
+                    <article class="slide">
                         <i class="bi bi-bar-chart"></i>
                         <h5>Verified Ecosystem</h5>
                         <p class="paragraph">Every professional and vendor undergoes a rigorous 3-step verification process,
-                            ensuring
-                            you connect only with trusted, qualified partners.</p>
-                    </div>
-        
-                    <div class="slide">
+                            ensuring you connect only with trusted, qualified partners.</p>
+                    </article>
+    
+                    <article class="slide">
                         <i class="bi bi-graph-up"></i>
                         <h5>Performance Analytics</h5>
-                        <p class="paragraph">Track vendor performance, project milestones, and cost metrics in real-time with
+                        <p class="paragraph">Track vendor performance, project milestones, and cost metrics in real-time
+                            with
                             customizable dashboards tailored to your industry needs.</p>
-                    </div>
-        
+                    </article>
+    
                     <button class="nav-btn next-btn" onclick="nextSlide()" aria-label="Next Slide">❯</button>
                 </div>
             </div>
-        </div>
-          
-        <!-- Join Community Section -->
-
-       <!-- <div class="section2 bg-light text-center" id="community">
-            <div class="container">
+        </section>
+    
+        <!-- Join Community Section (commented out) -->
+        <!-- 
+            <section class="section2 bg-light text-center" id="community">
+              <div class="container">
                 <h2 class="colorpattern">Be Part of the Innovation</h2>
                 <p class="paragraph">Join a community of creators, thinkers, and innovators.</p>
                 <a href="#contact-us" class="btn join-btn mt-3">Join Our Mission</a>
-            </div>
-        </div> --> 
-
-    </div>
+              </div>
+            </section>
+            -->
+    </main>
+      
 
     <!-- why  choose -->
 
-    <div class="wcu-section py-5" id="wcuSection">
+    <section id="wcuSection" class="wcu-section py-5">
         <div class="container">
-            <div class="text-center mb-5">
+            <header class="text-center mb-5">
                 <h2 class="wcu-section-heading service-color section-title">Why Choose Us</h2>
                 <p class="wcu-section-description paragraph">
                     We leverage deep industry expertise and advanced AI technologies to address critical operational
-                    challenges in Indian
-                    industries. Our approach drives measurable efficiency gains through intelligent, data-driven
-                    connections, ensuring
-                    optimized performance and verified results.
+                    challenges in Indian industries. Our approach drives measurable efficiency gains through intelligent,
+                    data-driven
+                    connections, ensuring optimized performance and verified results.
                 </p>
-            </div>
+            </header>
             <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-12 col-md-12 col-lg-4 mb-2">
+                <article class="col-12 col-lg-4">
                     <div class="wcu-card text-center p-4 h-100">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2436/2436628.png" class="wcu-card-image mb-3"
-                            alt="Industrial Background" />
+                        <figure class="mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2436/2436628.png" alt="Industrial Background"
+                                class="wcu-card-image" />
+                        </figure>
                         <h4 class="wcu-card-title">Industrial Background with Digital Focus</h4>
-                        <p class="wcu-card-description ">
+                        <p class="wcu-card-description">
                             Founded by an experienced industry professional, With over 20 years of hands-on industrial
-                            experience, our founding team understands real operational challenges. We
-                            design practical, impact-driven solutions that solve real-world problems—not just
-                            theoretical
-                            ones—ensuring measurable
-                            value for your business.
+                            experience, our founding team understands real operational challenges. We design practical,
+                            impact-driven solutions
+                            that solve real-world problems—not just theoretical ones—ensuring measurable value for your
+                            business.
                         </p>
                     </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-12 col-md-12 col-lg-4 mb-2">
+                </article>
+                <article class="col-12 col-lg-4">
                     <div class="wcu-card text-center p-4 h-100">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" class="wcu-card-image mb-3"
-                            alt="Startup Agility" />
+                        <figure class="mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="Startup Agility"
+                                class="wcu-card-image" />
+                        </figure>
                         <h4 class="wcu-card-title">Specialized Focus on Industrial Efficiency</h4>
                         <p class="wcu-card-description">
-                            As a start-up, we’re lean, adaptable, and Unlike generic platforms, we specialize in
-                            AI-driven
-                            solutions for manufacturing, energy, and infrastructure. Our
-                            industry-focused approach ensures faster deployment, precise resource matching, and features
-                            built to enhance
-                            operational efficiency.
+                            As a start-up, we’re lean, adaptable, and Unlike generic platforms, we specialize in AI-driven
+                            solutions for manufacturing, energy, and infrastructure. Our industry-focused approach ensures
+                            faster deployment,
+                            precise resource matching, and features built to enhance operational efficiency.
                         </p>
                     </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-12 col-md-12 col-lg-4 mb-2">
+                </article>
+                <article class="col-12 col-lg-4">
                     <div class="wcu-card text-center p-4 h-100">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" class="wcu-card-image mb-3"
-                            alt="Secure Data System" />
+                        <figure class="mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Secure Data System"
+                                class="wcu-card-image" />
+                        </figure>
                         <h4 class="wcu-card-title">Data-Driven Verification System</h4>
                         <p class="wcu-card-description">
                             Trust is essential in industrial collaborations. Diligince.ai goes beyond traditional
-                            directories with a robust 3-tier
-                            verification process. Our proprietary scoring algorithm assesses technical expertise,
-                            project
-                            experience, and
-                            performance metrics—ensuring businesses connect only with pre-vetted, qualified partners
-                            tailored to their needs.
+                            directories with a robust 3-tier verification process. Our proprietary scoring algorithm
+                            assesses technical expertise,
+                            project experience, and performance metrics—ensuring businesses connect only with pre-vetted,
+                            qualified partners tailored to their needs.
                         </p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
-    </div>
+    </section>
+      
 
     <!-- our service section -->
-
-    <div class="our-services-section py-5" id="exploreMenuSection">
+    <section class="our-services-section py-5" id="exploreMenuSection" role="region" aria-labelledby="ourServicesHeading">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
-                    <h2 class="section-title service-color mb-3">Our Services</h2>
+                    <h2 id="ourServicesHeading" class="section-title service-color mb-3">Our Services</h2>
                     <p class="section-subtitle text-muted paragraph">Empowering Industries through Smart Solutions</p>
                 </div>
             </div>
-            <div class="row g-4">
-    
+            <div class="row g-4" role="list">
                 <!-- Manufacturing -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up">
+                <article class="col-12 col-md-6 col-lg-3 mb-3" role="listitem" data-aos="fade-up">
                     <div class="card service-card h-100 border-1 shadow-sm">
                         <picture>
                             <source srcset="Manufacturing.webp" type="image/webp" />
                             <source srcset="Manufacturing.jpg" type="image/jpeg" />
-                            <img src="Manufacturing.jpg" alt="Manufacturing" class="card-img-top" width="380" height="253"
+                            <img src="Manufacturing.jpg" alt="Manufacturing process and machinery" class="card-img-top"
                                 loading="lazy" decoding="async" />
                         </picture>
                         <div class="card-body text-center">
-                            <h5 class="card-title">Manufacturing</h5>
+                            <h3 class="card-title">Manufacturing</h3>
                             <p class="card-text">Streamlining vendor connections for production plants</p>
                         </div>
                     </div>
-                </div>
+                </article>
     
                 <!-- Energy -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="100">
+                <article class="col-12 col-md-6 col-lg-3 mb-3" role="listitem" data-aos="fade-up" data-aos-delay="100">
                     <div class="card service-card h-100 border-1 shadow-sm">
                         <picture>
                             <source srcset="Energy_AI.webp" type="image/webp" />
                             <source srcset="Energy_AI.jpg" type="image/jpeg" />
-                            <img src="Energy_AI.jpg" alt="Energy" class="card-img-top" width="380" height="380"
+                            <img src="Energy_AI.jpg" alt="Energy sector with AI solutions" class="card-img-top"
                                 loading="lazy" decoding="async" />
                         </picture>
                         <div class="card-body text-center">
-                            <h5 class="card-title">Energy</h5>
+                            <h3 class="card-title">Energy</h3>
                             <p class="card-text">Supporting power plants with AI and workforce solutions</p>
                         </div>
                     </div>
-                </div>
+                </article>
     
                 <!-- Oil & Gas -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="200">
+                <article class="col-12 col-md-6 col-lg-3 mb-3" role="listitem" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-card h-100 border-1 shadow-sm">
                         <picture>
                             <source srcset="Oil.webp" type="image/webp" />
                             <source srcset="Oil.jpg" type="image/jpeg" />
-                            <img src="Oil.jpg" alt="Oil & Gas" class="card-img-top" width="380" height="253" loading="lazy"
+                            <img src="Oil.jpg" alt="Oil and gas industry" class="card-img-top" loading="lazy"
                                 decoding="async" />
                         </picture>
                         <div class="card-body text-center">
-                            <h5 class="card-title">Oil & Gas</h5>
+                            <h3 class="card-title">Oil & Gas</h3>
                             <p class="card-text">Helping with EPC contracts, materials, and logistics</p>
                         </div>
                     </div>
-                </div>
+                </article>
     
                 <!-- Infrastructure -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="300">
+                <article class="col-12 col-md-6 col-lg-3 mb-3" role="listitem" data-aos="fade-up" data-aos-delay="300">
                     <div class="card service-card h-100 border-1 shadow-sm">
                         <picture>
                             <source srcset="Infrastructure.webp" type="image/webp" />
                             <source srcset="Infrastructure.jpg" type="image/jpeg" />
-                            <img src="Infrastructure.jpg" alt="Infrastructure" class="card-img-top" width="380" height="380"
-                                loading="lazy" decoding="async" />
+                            <img src="Infrastructure.jpg" alt="Infrastructure sector" class="card-img-top" loading="lazy"
+                                decoding="async" />
                         </picture>
                         <div class="card-body text-center">
-                            <h5 class="card-title">Infrastructure</h5>
+                            <h3 class="card-title">Infrastructure</h3>
                             <p class="card-text">Connecting consultants and contractors in real estate</p>
                         </div>
                     </div>
-                </div>
+                </article>
     
                 <!-- Engineering Services -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up">
+                <article class="col-12 col-md-6 col-lg-3 mb-3" role="listitem" data-aos="fade-up">
                     <div class="card service-card h-100 border-1 shadow-sm">
                         <picture>
                             <source srcset="Engineer.webp" type="image/webp" />
                             <source srcset="Engineer.jpg" type="image/jpeg" />
-                            <img src="Engineer.jpg" alt="Engineering Services" class="card-img-top" width="380" height="253"
-                                loading="lazy" decoding="async" />
+                            <img src="Engineer.jpg" alt="Engineering services" class="card-img-top" loading="lazy"
+                                decoding="async" />
                         </picture>
                         <div class="card-body text-center">
-                            <h5 class="card-title">Engineering Services</h5>
+                            <h3 class="card-title">Engineering Services</h3>
                             <p class="card-text">Sourcing technical experts and specialists</p>
                         </div>
                     </div>
-                </div>
+                </article>
     
                 <!-- Industrial Logistics -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="100">
+                <article class="col-12 col-md-6 col-lg-3 mb-3" role="listitem" data-aos="fade-up" data-aos-delay="100">
                     <div class="card service-card h-100 border-1 shadow-sm">
                         <picture>
                             <source srcset="Industrail.webp" type="image/webp" />
                             <source srcset="Industrail.jpg" type="image/jpeg" />
-                            <img src="Industrail.jpg" alt="Industrial Logistics" class="card-img-top" width="380"
-                                height="253" loading="lazy" decoding="async" />
+                            <img src="Industrail.jpg" alt="Industrial logistics and transport" class="card-img-top"
+                                loading="lazy" decoding="async" />
                         </picture>
                         <div class="card-body text-center">
-                            <h5 class="card-title">Industrial Logistics</h5>
+                            <h3 class="card-title">Industrial Logistics</h3>
                             <p class="card-text">Enabling crane, warehouse, and transport booking</p>
                         </div>
                     </div>
-                </div>
+                </article>
     
                 <!-- OEMs & Spare Parts -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="200">
+                <article class="col-12 col-md-6 col-lg-3 mb-3" role="listitem" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-card h-100 border-1 shadow-sm">
                         <picture>
                             <source srcset="OEM's.webp" type="image/webp" />
                             <source srcset="OEM's.jpg" type="image/jpeg" />
-                            <img src="OEM's.jpg" alt="OEMs & Spare Parts" class="card-img-top" width="380" height="253"
-                                loading="lazy" decoding="async" />
+                            <img src="OEM's.jpg" alt="OEMs and spare parts marketplace" class="card-img-top" loading="lazy"
+                                decoding="async" />
                         </picture>
                         <div class="card-body text-center">
-                            <h5 class="card-title">OEMs & Spare Parts</h5>
+                            <h3 class="card-title">OEMs & Spare Parts</h3>
                             <p class="card-text">Marketplace for equipment vendors and spares</p>
                         </div>
                     </div>
-                </div>
+                </article>
     
                 <!-- MSMEs & SMEs -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="300">
+                <article class="col-12 col-md-6 col-lg-3 mb-3" role="listitem" data-aos="fade-up" data-aos-delay="300">
                     <div class="card service-card h-100 border-1 shadow-sm">
                         <picture>
                             <source srcset="MSME.webp" type="image/webp" />
                             <source srcset="MSME.jpg" type="image/jpeg" />
-                            <img src="MSME.jpg" alt="MSMEs & SMEs" class="card-img-top" width="380" height="253"
-                                loading="lazy" decoding="async" />
+                            <img src="MSME.jpg" alt="MSMEs and SMEs support" class="card-img-top" loading="lazy"
+                                decoding="async" />
                         </picture>
                         <div class="card-body text-center">
-                            <h5 class="card-title">MSMEs & SMEs</h5>
+                            <h3 class="card-title">MSMEs & SMEs</h3>
                             <p class="card-text">Driving digital adoption and AI enablement</p>
                         </div>
                     </div>
-                </div>
-    
+                </article>
             </div>
         </div>
-    </div>
+    </section>
+      
       
 
     <!-- About us section -->
 
-    <div class="About-section pt-5 pb-5" id="deliveryPaymentSection">
+    <section class="about-section pt-5 pb-5" id="deliveryPaymentSection" aria-labelledby="aboutUsHeading">
         <div class="container">
             <div class="row align-items-center justify-content-center">
+    
                 <!-- Video Column -->
-                <div class="col-12 col-md-10 text-center">
-                    <video class="responsive-video" controls autoplay muted loop playsinline>
-                        <source src="_Welcome_to_Thinkvate_V1.mp4" type="video/mp4">
-                        <track src="captions_en.vtt" kind="captions" srclang="en" label="English">
+                <div class="col-12 col-md-10 text-center mb-4">
+                    <video class="responsive-video" controls autoplay muted loop playsinline
+                        aria-describedby="aboutUsDescription" preload="metadata">
+                        <source src="_Welcome_to_Thinkvate_V1.mp4" type="video/mp4" />
+                        <track src="captions_en.vtt" kind="captions" srclang="en" label="English" default />
+                        Sorry, your browser does not support embedded videos.
                     </video>
-                      
                 </div>
-                
+    
                 <!-- Text Content Column -->
                 <div class="col-12 col-md-12">
-                    <h1 class="About-section-heading mb-3 service-color">About Us</h1>
-                    <p class="About-section-description">
-                        Founded in 2019 and officially incorporated in 2023, Thinkvate Solutions Pvt. Ltd. is a government-recognized MSME
-                        (UDYAM-AP-10-0075552) led by seasoned professionals in control and instrumentation. In 2024, we initiated our flagship
-                        digital transformation journey, and by 2025, strategically evolved into a digital-first AI technology company.
-                        
-                        Thinkvate specializes in developing AI-driven SaaS platforms designed to optimize industrial operations, improve vendor
-                        lifecycle management, and enhance decision-making through data intelligence. Our solutions address real-world challenges
+                    <h1 id="aboutUsHeading" class="about-section-heading mb-3 service-color">About Us</h1>
+                    <p id="aboutUsDescription" class="about-section-description">
+                        Founded in 2019 and officially incorporated in 2023, Thinkvate Solutions Pvt. Ltd. is a
+                        government-recognized MSME
+                        (UDYAM-AP-10-0075552) led by seasoned professionals in control and instrumentation. In 2024, we
+                        initiated our flagship
+                        digital transformation journey, and by 2025, strategically evolved into a digital-first AI
+                        technology company.
+                    </p>
+                    <p class="about-section-description">
+                        Thinkvate specializes in developing AI-driven SaaS platforms designed to optimize industrial
+                        operations, improve vendor
+                        lifecycle management, and enhance decision-making through data intelligence. Our solutions address
+                        real-world challenges
                         across India’s mid-sized and MSME manufacturing landscape.
-                        
-                        With a mission to accelerate industrial digitization, we blend deep domain expertise with smart automation—delivering
-                        measurable outcomes, operational resilience, and a competitive edge for modern enterprises in an increasingly connected
+                    </p>
+                    <p class="about-section-description">
+                        With a mission to accelerate industrial digitization, we blend deep domain expertise with smart
+                        automation—delivering
+                        measurable outcomes, operational resilience, and a competitive edge for modern enterprises in an
+                        increasingly connected
                         economy.
                     </p>
-
-                    <h2 class="text-center mt-5 mb-3 service-color ">Our Journey</h2>
-                    <section class="timeline">
-                        <div class="timeline-item mb-4">
+    
+                    <h2 class="text-center mt-5 mb-3 service-color">Our Journey</h2>
+    
+                    <section class="timeline" aria-label="Company timeline">
+                        <article class="timeline-item mb-4">
                             <div class="timeline-content">
                                 <h3>Founded Thinkvate</h3>
-                                <p class="year">2019</p>
-                                <p class="paragraph">Founded in 2019, Thinkvate launched in 2023 to help MSMEs and mid-sized businesses adopt AI solutions. By mid-2024, we
-                                expanded into projects and training, enabling smarter, tech-driven growth across industries.</p>
-                            </div>
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-item mb-4">
-                            <div class="timeline-content pl-2">
-                                <h3>Diligince.ai MVP(Development Stage)</h3>
-                                <p class="year">2025</p>
-                                <p class="paragraph">In 2025, we began our MSME registration and transitioned toward a digital-first model. This marked the start of
-                                developing our flagship AI SaaS platform, designed to drive intelligent business automation.
+                                <time datetime="2019" class="year">2019</time>
+                                <p class="paragraph">
+                                    Founded in 2019, Thinkvate launched in 2023 to help MSMEs and mid-sized businesses adopt
+                                    AI solutions. By mid-2024, we
+                                    expanded into projects and training, enabling smarter, tech-driven growth across
+                                    industries.
                                 </p>
                             </div>
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-item">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                        </article>
+    
+                        <article class="timeline-item mb-4">
+                            <div class="timeline-content pl-2">
+                                <h3>Diligince.ai MVP (Development Stage)</h3>
+                                <time datetime="2025" class="year">2025</time>
+                                <p class="paragraph">
+                                    In 2025, we began our MSME registration and transitioned toward a digital-first model.
+                                    This marked the start of
+                                    developing our flagship AI SaaS platform, designed to drive intelligent business
+                                    automation.
+                                </p>
+                            </div>
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                        </article>
+    
+                        <article class="timeline-item">
                             <div class="timeline-content">
                                 <h3>Expanding Impact</h3>
-                                <p class="year">2025(Q4)</p>
-                                <p class="paragraph">Aiming to support 100+ MSMEs with diligince.ai.</p>
+                                <time datetime="2025-12" class="year">2025 (Q4)</time>
+                                <p class="paragraph">
+                                    Aiming to support 100+ MSMEs with diligince.ai.
+                                </p>
                             </div>
-                            <div class="timeline-dot"></div>
-                        </div>
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                        </article>
                     </section>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+      
 
     <!-- founder section -->
 
-    <div class="founder-section py-5">
+    <section class="founder-section py-5">
         <div class="container">
-
             <h2 class="founder-heading service-color section-title">Founder & Director</h2>
-            <h4 class="founder-subtitle ">Thinkvate Solutions Pvt. Ltd.</h4>
+            <h4 class="founder-subtitle">Thinkvate Solutions Pvt. Ltd.</h4>
             <p class="founder-description paragraph">
-                With over 20 years of experience in Instrumentation & Control Engineering, Nagesh has led major power
-                plant projects
-                across India and Saudi Arabia. His deep understanding of industrial operations and vendor ecosystems led
-                to the
-                creation
-                of <strong>Diligince.ai</strong>—India’s first AI-powered platform designed to streamline vendor
-                management and
-                connect industries with
-                verified service providers.
-
-                Nagesh combines technical expertise with strategic vision to drive Thinkvate’s mission of building
-                secure, scalable,
-                and
-                intelligent solutions that improve operational efficiency and enable digital transformation across
-                Indian
-                industries.
+                With over 20 years of experience in Instrumentation & Control Engineering, Nagesh has led major power plant
+                projects across India and Saudi Arabia. His deep understanding of industrial operations and vendor
+                ecosystems led to the creation of <strong>Diligince.ai</strong>—India’s first AI-powered platform designed
+                to streamline vendor management and connect industries with verified service providers.
+                Nagesh combines technical expertise with strategic vision to drive Thinkvate’s mission of building secure,
+                scalable, and intelligent solutions that improve operational efficiency and enable digital transformation
+                across Indian industries.
             </p>
         </div>
-    </div>
-
+    </section>
+      
     <!-- mentor section  -->
 
-    <div class="mentors-section pt-5 pb-5" id="followUsSection">
+    <section class="mentors-section py-5" id="followUsSection">
         <div class="container">
             <h1 class="mentors-heading section-title text-center mb-5">Our Mentors</h1>
             <div class="row justify-content-center">
     
                 <!-- Mentor Card 1 -->
-                <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
+                <article class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
                         <picture>
                             <source srcset="Arun.webp" type="image/webp" />
                             <source srcset="Arun.jpg" type="image/jpeg" />
                             <img src="Arun.jpg" alt="Project Manager" class="mentor-img" loading="lazy" decoding="async"
-                                width="300" height="300" style="aspect-ratio: 1/1;" />
+                                width="300" height="300" />
                         </picture>
                         <div class="mentor-overlay">
                             <p class="mentor-role">Project Manager</p>
@@ -574,16 +600,16 @@
                         </div>
                     </div>
                     <p class="mentor-name mt-2">G.Arun Kumar</p>
-                </div>
+                </article>
     
                 <!-- Mentor Card 2 -->
-                <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
+                <article class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
                         <picture>
                             <source srcset="female.webp" type="image/webp" />
                             <source srcset="female.jpg" type="image/jpeg" />
                             <img src="female.jpg" alt="Manager" class="mentor-img" loading="lazy" decoding="async"
-                                width="300" height="300" style="aspect-ratio: 1/1;" />
+                                width="300" height="300" />
                         </picture>
                         <div class="mentor-overlay">
                             <p class="mentor-role">Manager in multinational company</p>
@@ -596,16 +622,16 @@
                         </div>
                     </div>
                     <p class="mentor-name mt-2">Anitha K</p>
-                </div>
+                </article>
     
                 <!-- Mentor Card 3 -->
-                <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
+                <article class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
                         <picture>
                             <source srcset="Santosh.webp" type="image/webp" />
                             <source srcset="Santosh.jpg" type="image/jpeg" />
                             <img src="Santosh.jpg" alt="Full-Stack Developer" class="mentor-img" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
+                                decoding="async" width="300" height="300" />
                         </picture>
                         <div class="mentor-overlay">
                             <p class="mentor-role">Full-Stack Developer</p>
@@ -618,16 +644,16 @@
                         </div>
                     </div>
                     <p class="mentor-name mt-2">G Santosh Kumar</p>
-                </div>
+                </article>
     
                 <!-- Mentor Card 4 -->
-                <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
+                <article class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
                         <picture>
                             <source srcset="hari.webp" type="image/webp" />
                             <source srcset="hari.jpg" type="image/jpeg" />
                             <img src="hari.jpg" alt="Director" class="mentor-img" loading="lazy" decoding="async"
-                                width="300" height="300" style="aspect-ratio: 1/1;" />
+                                width="300" height="300" />
                         </picture>
                         <div class="mentor-overlay">
                             <p class="mentor-role">Director in multiple national companies</p>
@@ -640,112 +666,105 @@
                         </div>
                     </div>
                     <p class="mentor-name mt-2">Hari Krishna</p>
-                </div>
+                </article>
     
             </div>
         </div>
-    </div>
+    </section>
+      
       
 
     <!-- Core Technology Experts -->
-    <div class="team-section py-5">
+    <section class="team-section py-5">
         <div class="container">
             <h2 class="text-center section-title mb-5 service-color">Core Technology Experts</h2>
             <div class="row justify-content-center">
     
                 <!-- Team Member 1 -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
-                        <picture>
-                            <source srcset="kishore.webp" type="image/webp" />
-                            <source srcset="kishore.jpg" type="image/jpeg" />
-                            <img src="kishore.jpg" alt="Frontend Developer - Kishore" class="team-photo" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
-                        </picture>
-                        <div class="team-info">
-                            <p class="team-role">Frontend Developer</p>
-                        </div>
-                        <p class="team-name">Kishore</p>
-                        <p class="team-description">
-                            B.Tech graduate in CSE (AI & ML) with a strong foundation in full-stack web development.
-                            Completed the Full Stack Development program at NxtWave, gaining hands-on experience in building
-                            dynamic, real-world web applications. Currently serving as a Team Lead, leveraging AI expertise
-                            and development skills to deliver scalable, high-performance solutions.
-                        </p>
+                <article class="col-10 col-md-5 col-lg-4 mb-4 team-card text-center">
+                    <picture>
+                        <source srcset="kishore.webp" type="image/webp" />
+                        <source srcset="kishore.jpg" type="image/jpeg" />
+                        <img src="kishore.jpg" alt="Kishore, Frontend Developer" class="team-photo" loading="lazy"
+                            decoding="async" width="300" height="300" />
+                    </picture>
+                    <div class="team-info">
+                        <p class="team-role">Frontend Developer</p>
                     </div>
-                </div>
+                    <h3 class="team-name">Kishore</h3>
+                    <p class="team-description">
+                        B.Tech graduate in CSE (AI & ML) with a strong foundation in full-stack web development.
+                        Completed the Full Stack Development program at NxtWave, gaining hands-on experience in building
+                        dynamic, real-world web applications. Currently serving as a Team Lead, leveraging AI expertise
+                        and development skills to deliver scalable, high-performance solutions.
+                    </p>
+                </article>
     
                 <!-- Team Member 2 -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
-                        <picture>
-                            <source srcset="Radha.webp" type="image/webp" />
-                            <source srcset="Radha.jpg" type="image/jpeg" />
-                            <img src="Radha.jpg" alt="Backend Developer - Radha" class="team-photo" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
-                        </picture>
-                        <div class="team-info">
-                            <p class="team-role">Backend Developer</p>
-                        </div>
-                        <p class="team-name">Radha</p>
-                        <p class="team-description">
-                            B.Tech graduate in CSE (AI & ML) with strong expertise in backend development. Skilled in
-                            building robust APIs using SQL and Spring Boot, with hands-on experience in microservices
-                            architecture and cloud deployment. Completed a Java Full Stack course focused on backend
-                            development. Currently working as a Backend Developer, delivering scalable and efficient
-                            server-side solutions.
-                        </p>
+                <article class="col-10 col-md-5 col-lg-4 mb-4 team-card text-center">
+                    <picture>
+                        <source srcset="Radha.webp" type="image/webp" />
+                        <source srcset="Radha.jpg" type="image/jpeg" />
+                        <img src="Radha.jpg" alt="Radha, Backend Developer" class="team-photo" loading="lazy"
+                            decoding="async" width="300" height="300" />
+                    </picture>
+                    <div class="team-info">
+                        <p class="team-role">Backend Developer</p>
                     </div>
-                </div>
+                    <h3 class="team-name">Radha</h3>
+                    <p class="team-description">
+                        B.Tech graduate in CSE (AI & ML) with strong expertise in backend development. Skilled in
+                        building robust APIs using SQL and Spring Boot, with hands-on experience in microservices
+                        architecture and cloud deployment. Completed a Java Full Stack course focused on backend
+                        development. Currently working as a Backend Developer, delivering scalable and efficient
+                        server-side solutions.
+                    </p>
+                </article>
     
                 <!-- Team Member 3 -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
-                        <picture>
-                            <source srcset="sravani.webp" type="image/webp" />
-                            <source srcset="sravani.jpg" type="image/jpeg" />
-                            <img src="sravani.jpg" alt="Frontend Developer - Sravani" class="team-photo" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
-                        </picture>
-                        <div class="team-info">
-                            <p class="team-role">Frontend Developer</p>
-                        </div>
-                        <p class="team-name">Sravani</p>
-                        <p class="team-description">
-                            B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep
-                            learning. Currently working as a Frontend Developer, with practical experience in building
-                            responsive, user-focused web applications. Completed a specialized frontend development course,
-                            gaining proficiency in HTML, CSS, JavaScript, Bootstrap, and React.
-                        </p>
+                <article class="col-10 col-md-5 col-lg-4 mb-4 team-card text-center">
+                    <picture>
+                        <source srcset="sravani.webp" type="image/webp" />
+                        <source srcset="sravani.jpg" type="image/jpeg" />
+                        <img src="sravani.jpg" alt="Sravani, Frontend Developer" class="team-photo" loading="lazy"
+                            decoding="async" width="300" height="300" />
+                    </picture>
+                    <div class="team-info">
+                        <p class="team-role">Frontend Developer</p>
                     </div>
-                </div>
+                    <h3 class="team-name">Sravani</h3>
+                    <p class="team-description">
+                        B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep
+                        learning. Currently working as a Frontend Developer, with practical experience in building
+                        responsive, user-focused web applications. Completed a specialized frontend development course,
+                        gaining proficiency in HTML, CSS, JavaScript, Bootstrap, and React.
+                    </p>
+                </article>
     
                 <!-- Team Member 4 -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
-                        <picture>
-                            <source srcset="mani.webp" type="image/webp" />
-                            <source srcset="mani.jpg" type="image/jpeg" />
-                            <img src="mani.jpg" alt="Automation Test Engineer - Manikanta" class="team-photo" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
-                        </picture>
-                        <div class="team-info">
-                            <p class="team-role">Automation Test Engineer</p>
-                        </div>
-                        <p class="team-name">Manikanta</p>
-                        <p class="team-description">
-                            B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep
-                            learning. Currently working as a Software Tester, with practical experience in quality assurance
-                            and automated testing. Completed a specialized testing course, gaining proficiency in manual
-                            testing, Selenium, JUnit, and test automation frameworks to ensure reliable, high-quality
-                            software delivery.
-                        </p>
+                <article class="col-10 col-md-5 col-lg-4 mb-4 team-card text-center">
+                    <picture>
+                        <source srcset="mani.webp" type="image/webp" />
+                        <source srcset="mani.jpg" type="image/jpeg" />
+                        <img src="mani.jpg" alt="Manikanta, Automation Test Engineer" class="team-photo" loading="lazy"
+                            decoding="async" width="300" height="300" />
+                    </picture>
+                    <div class="team-info">
+                        <p class="team-role">Automation Test Engineer</p>
                     </div>
-                </div>
+                    <h3 class="team-name">Manikanta</h3>
+                    <p class="team-description">
+                        B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep
+                        learning. Currently working as a Software Tester, with practical experience in quality assurance
+                        and automated testing. Completed a specialized testing course, gaining proficiency in manual
+                        testing, Selenium, JUnit, and test automation frameworks to ensure reliable, high-quality
+                        software delivery.
+                    </p>
+                </article>
     
             </div>
         </div>
-    </div>
+    </section>
       
 
     <!-- contact us section-->
@@ -770,8 +789,6 @@
     </div>
       
       
-
-
     <!-- Footer Section -->
 
     <div class="wave-container" style="overflow: hidden; background-color: #1e293b;">
@@ -841,7 +858,6 @@
         </div>
     </footer>
       
-      
 
     <!-- script section -->
 
@@ -869,10 +885,6 @@
         showSlide(currentSlide);
     </script>
       
-    
-    
-
-
 
 </body>
 

@@ -1,12 +1,27 @@
-function collapseNavbar() {
-   
-    if ($('.navbar-toggler').is(':visible')) {
-    $('.navbar-collapse').collapse('hide');
-    }
+// nav.js
+
+function scrollToTop(event) {
+  if(event) event.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Load GA4 script asynchronously
-(function() {
+function collapseNavbar() {
+  const navbarCollapse = document.getElementById('navbarNavAltMarkup');
+  if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      if (window.jQuery) {
+          window.jQuery(navbarCollapse).collapse('hide');
+      } else {
+          navbarCollapse.classList.remove('show');
+      }
+  }
+}
+
+window.scrollToTop = scrollToTop;
+window.collapseNavbar = collapseNavbar;
+
+
+window.addEventListener('load', () => {
+  // Load GA4 script async after load event
   const gaScript = document.createElement('script');
   gaScript.async = true;
   gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_MEASUREMENT_ID';
@@ -21,13 +36,15 @@ function collapseNavbar() {
     gtag('config', 'YOUR_GA4_MEASUREMENT_ID');
   };
 
-  document.addEventListener('DOMContentLoaded', function () {
+  // Set up click tracking for #joinUsLink button
+  const setupJoinUsTracking = () => {
     const joinUsLink = document.getElementById('joinUsLink');
     if (!joinUsLink) return;
     const joinUsButton = joinUsLink.querySelector('button');
+    if (!joinUsButton) return;
 
     joinUsLink.addEventListener('click', function (e) {
-      e.preventDefault();  // Prevent default navigation
+      e.preventDefault();
 
       if (window.gtag) {
         gtag('event', 'click', {
@@ -42,13 +59,11 @@ function collapseNavbar() {
       const newWindow = window.open(formUrl, '_blank');
 
       if (!newWindow) {
-        // Popup blocked or failed to open
         joinUsButton.innerText = 'Join Us';
         alert('Unable to open the form. Please disable popup blockers or try again later.');
         return;
       }
 
-      // Poll to detect if user closed the form window
       const timer = setInterval(() => {
         if (newWindow.closed) {
           clearInterval(timer);
@@ -56,12 +71,18 @@ function collapseNavbar() {
         }
       }, 500);
 
-      // Reset button if user comes back to page (in case window open detection failed)
-      document.addEventListener('visibilitychange', function() {
+      document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') {
           joinUsButton.innerText = 'Join Us';
         }
       });
     });
-  });
-})();
+  };
+
+  // Setup click tracking once GA4 is ready
+  if (document.readyState === 'complete') {
+    setupJoinUsTracking();
+  } else {
+    window.addEventListener('DOMContentLoaded', setupJoinUsTracking);
+  }
+});
