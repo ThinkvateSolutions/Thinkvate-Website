@@ -8,20 +8,22 @@ function scrollToTop(event) {
 function collapseNavbar() {
   const navbarCollapse = document.getElementById('navbarNavAltMarkup');
   if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-      if (window.jQuery) {
-          window.jQuery(navbarCollapse).collapse('hide');
-      } else {
-          navbarCollapse.classList.remove('show');
-      }
+    if (window.jQuery) {
+      window.jQuery(navbarCollapse).collapse('hide');
+    } else {
+      // Defer class removal to avoid layout thrashing
+      requestAnimationFrame(() => {
+        navbarCollapse.classList.remove('show');
+      });
+    }
   }
 }
 
 window.scrollToTop = scrollToTop;
 window.collapseNavbar = collapseNavbar;
 
-
 window.addEventListener('load', () => {
-  // Load GA4 script async after load event
+  // Load GA4 script asynchronously after load event
   const gaScript = document.createElement('script');
   gaScript.async = true;
   gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_MEASUREMENT_ID';
@@ -36,7 +38,7 @@ window.addEventListener('load', () => {
     gtag('config', 'YOUR_GA4_MEASUREMENT_ID');
   };
 
-  // Set up click tracking for #joinUsLink button
+  // Setup click tracking for #joinUsLink button
   const setupJoinUsTracking = () => {
     const joinUsLink = document.getElementById('joinUsLink');
     if (!joinUsLink) return;
@@ -70,19 +72,20 @@ window.addEventListener('load', () => {
           joinUsButton.innerText = 'Join Us';
         }
       }, 500);
-
-      document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'visible') {
-          joinUsButton.innerText = 'Join Us';
-        }
-      });
     });
   };
 
-  // Setup click tracking once GA4 is ready
   if (document.readyState === 'complete') {
     setupJoinUsTracking();
   } else {
     window.addEventListener('DOMContentLoaded', setupJoinUsTracking);
+  }
+});
+
+// Reset Join Us button text when user returns to the page
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    const joinUsButton = document.querySelector('#joinUsLink button');
+    if (joinUsButton) joinUsButton.innerText = 'Join Us';
   }
 });

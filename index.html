@@ -115,12 +115,6 @@
     <!-- Preload LCP Images -->
     <link rel="preload" as="image" href="hero.webp" type="image/webp" fetchpriority="high" />
     <link rel="preload" as="image" href="whoare.webp" type="image/webp" fetchpriority="high" />
-
-    <script>
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    </script>
 </head>
   
   
@@ -693,103 +687,97 @@
       
 
     <!-- Core Technology Experts -->
-    <div class="team-section py-5">
+    <section class="team-section py-5">
         <div class="container">
             <h2 class="text-center section-title mb-5 service-color">Core Technology Experts</h2>
             <div class="row justify-content-center">
+    
                 <!-- Team Member 1 -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
-                        <picture>
-                            <source srcset="kishore.webp" type="image/webp" />
-                            <source srcset="kishore.jpg" type="image/jpeg" />
-                            <img src="kishore.jpg" alt="Frontend Developer - Kishore" class="team-photo" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
-                        </picture>
-                        <div class="team-info">
-                            <p class="team-role">Frontend Developer</p>
-                        </div>
-                        <p class="team-name">Kishore</p>
-                        <p class="team-description">
-                            B.Tech graduate in CSE (AI & ML) with a strong foundation in full-stack web development.
-                            Completed the Full Stack Development program at NxtWave, gaining hands-on experience in building
-                            dynamic, real-world web applications. Currently serving as a Team Lead, leveraging AI expertise
-                            and development skills to deliver scalable, high-performance solutions.
-                        </p>
+                <article class="col-10 col-md-5 col-lg-5 mb-4 team-card text-center">
+                    <picture>
+                        <source srcset="kishore.webp" type="image/webp" />
+                        <source srcset="kishore.jpg" type="image/jpeg" />
+                        <img src="kishore.jpg" alt="Kishore, Frontend Developer" class="team-photo" loading="lazy"
+                            decoding="async" width="300" height="300" />
+                    </picture>
+                    <div class="team-info">
+                        <p class="team-role">Frontend Developer</p>
                     </div>
-                </div>
+                    <h3 class="team-name">Kishore</h3>
+                    <p class="team-description">
+                        B.Tech graduate in CSE (AI & ML) with a strong foundation in full-stack web development.
+                        Completed the Full Stack Development program at NxtWave, gaining hands-on experience in building
+                        dynamic, real-world web applications. Currently serving as a Team Lead, leveraging AI expertise
+                        and development skills to deliver scalable, high-performance solutions.
+                    </p>
+                </article>
     
                 <!-- Team Member 2 -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
-                        <picture>
-                            <source srcset="Radha.webp" type="image/webp" />
-                            <source srcset="Radha.jpg" type="image/jpeg" />
-                            <img src="Radha.jpg" alt="Backend Developer - Radha" class="team-photo" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
-                        </picture>
-                        <div class="team-info">
-                            <p class="team-role">Backend Developer</p>
-                        </div>
-                        <p class="team-name">Radha</p>
-                        <p class="team-description">
-                            B.Tech graduate in CSE (AI & ML) with strong expertise in backend development. Skilled in
-                            building robust APIs using SQL and Spring Boot, with hands-on experience in microservices
-                            architecture and cloud deployment. Completed a Java Full Stack course focused on backend
-                            development. Currently working as a Backend Developer, delivering scalable and efficient
-                            server-side solutions.
-                        </p>
+                <article class="col-10 col-md-5 col-lg-5 mb-4 team-card text-center">
+                    <picture>
+                        <source srcset="Radha.webp" type="image/webp" />
+                        <source srcset="Radha.jpg" type="image/jpeg" />
+                        <img src="Radha.jpg" alt="Radha, Backend Developer" class="team-photo" loading="lazy"
+                            decoding="async" width="300" height="300" />
+                    </picture>
+                    <div class="team-info">
+                        <p class="team-role">Backend Developer</p>
                     </div>
-                </div>
+                    <h3 class="team-name">Radha</h3>
+                    <p class="team-description">
+                        B.Tech graduate in CSE (AI & ML) with strong expertise in backend development. Skilled in
+                        building robust APIs using SQL and Spring Boot, with hands-on experience in microservices
+                        architecture and cloud deployment. Completed a Java Full Stack course focused on backend
+                        development. Currently working as a Backend Developer, delivering scalable and efficient
+                        server-side solutions.
+                    </p>
+                </article>
     
                 <!-- Team Member 3 -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
-                        <picture>
-                            <source srcset="sravani.webp" type="image/webp" />
-                            <source srcset="sravani.jpg" type="image/jpeg" />
-                            <img src="sravani.jpg" alt="Frontend Developer - Sravani" class="team-photo" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
-                        </picture>
-                        <div class="team-info">
-                            <p class="team-role">Frontend Developer</p>
-                        </div>
-                        <p class="team-name">Sravani</p>
-                        <p class="team-description">
-                            B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep
-                            learning. Currently working as a Frontend Developer, with practical experience in building
-                            responsive, user-focused web applications. Completed a specialized frontend development course,
-                            gaining proficiency in HTML, CSS, JavaScript, Bootstrap, and React.
-                        </p>
+                <article class="col-10 col-md-5 col-lg-5 mb-4 team-card text-center">
+                    <picture>
+                        <source srcset="sravani.webp" type="image/webp" />
+                        <source srcset="sravani.jpg" type="image/jpeg" />
+                        <img src="sravani.jpg" alt="Sravani, Frontend Developer" class="team-photo" loading="lazy"
+                            decoding="async" width="300" height="300" />
+                    </picture>
+                    <div class="team-info">
+                        <p class="team-role">Frontend Developer</p>
                     </div>
-                </div>
+                    <h3 class="team-name">Sravani</h3>
+                    <p class="team-description">
+                        B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep
+                        learning. Currently working as a Frontend Developer, with practical experience in building
+                        responsive, user-focused web applications. Completed a specialized frontend development course,
+                        gaining proficiency in HTML, CSS, JavaScript, Bootstrap, and React.
+                    </p>
+                </article>
     
                 <!-- Team Member 4 -->
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 mb-4">
-                    <div class="team-card text-center">
-                        <picture>
-                            <source srcset="mani.webp" type="image/webp" />
-                            <source srcset="mani.jpg" type="image/jpeg" />
-                            <img src="mani.jpg" alt="Automation Test Engineer - Manikanta" class="team-photo" loading="lazy"
-                                decoding="async" width="300" height="300" style="aspect-ratio: 1/1;" />
-                        </picture>
-                        <div class="team-info">
-                            <p class="team-role">Automation Test Engineer</p>
-                        </div>
-                        <p class="team-name">Manikanta</p>
-                        <p class="team-description">
-                            B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep
-                            learning. Currently working as a Software Tester, with practical experience in quality assurance
-                            and automated testing. Completed a specialized testing course, gaining proficiency in manual
-                            testing, Selenium, JUnit, and test automation frameworks to ensure reliable, high-quality
-                            software delivery.
-                        </p>
+                <article class="col-10 col-md-5 col-lg-5 mb-4 team-card text-center">
+                    <picture>
+                        <source srcset="mani.webp" type="image/webp" />
+                        <source srcset="mani.jpg" type="image/jpeg" />
+                        <img src="mani.jpg" alt="Manikanta, Automation Test Engineer" class="team-photo" loading="lazy"
+                            decoding="async" width="300" height="300" />
+                    </picture>
+                    <div class="team-info">
+                        <p class="team-role">Automation Test Engineer</p>
                     </div>
-                </div>
+                    <h3 class="team-name">Manikanta</h3>
+                    <p class="team-description">
+                        B.Tech graduate in CSE (AI & ML) with strong skills in Python, machine learning, and deep
+                        learning. Currently working as a Software Tester, with practical experience in quality assurance
+                        and automated testing. Completed a specialized testing course, gaining proficiency in manual
+                        testing, Selenium, JUnit, and test automation frameworks to ensure reliable, high-quality
+                        software delivery.
+                    </p>
+                </article>
     
             </div>
         </div>
-    </div>
+    </section>
+      
     
 
     <!-- contact us section-->
