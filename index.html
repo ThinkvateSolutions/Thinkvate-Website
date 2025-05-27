@@ -26,25 +26,26 @@
     <meta name="twitter:image" content="https://www.thinkvate.com/assets/twitter-image.jpg" />
 
     <!-- Favicon placeholder -->
-    <!-- <link rel="icon" href="/favicon.ico" /> -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <!-- Preconnects for Fonts -->
+
+    <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Google Fonts with swap to reduce FOIT -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet" />
 
-    <!-- Critical CSS only -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <!-- Bootstrap CSS with correct integrity -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-    <!-- Defer non-critical CSS using preload + onload -->
+    <!-- Preload & defer Font Awesome and Bootstrap Icons -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style"
         onload="this.rel='stylesheet'" crossorigin="anonymous" />
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" as="style"
-        onload="this.rel='stylesheet'" />
+        onload="this.rel='stylesheet'" crossorigin="anonymous" />
     <link rel="preload" href="Thinkvate.css" as="style" onload="this.rel='stylesheet'" />
 
     <noscript>
@@ -54,7 +55,11 @@
         <link href="Thinkvate.css" rel="stylesheet" />
     </noscript>
 
-    <!-- Defer AOS styles and script load -->
+    <!-- Preload critical LCP images -->
+    <link rel="preload" as="image" href="hero.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="whoare.webp" type="image/webp" fetchpriority="high" />
+
+    <!-- Defer AOS (Animate On Scroll) styles and script -->
     <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script defer>
         window.addEventListener('load', () => {
@@ -72,39 +77,47 @@
         });
     </script>
 
-    <!-- Security Policies -->
+    <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline';
-        style-src 'self' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
-        font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
-        img-src 'self' https://cdn-icons-png.flaticon.com https://randomuser.me data:;
-        connect-src 'self';
-        frame-src 'self' https://docs.google.com;
-      " />
+      default-src 'self';
+      script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com https://www.googletagmanager.com 'unsafe-inline';
+      style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
+      font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+      img-src 'self' https://cdn-icons-png.flaticon.com https://randomuser.me https://www.googletagmanager.com data:;
+      connect-src 'self';
+      frame-src 'self' https://docs.google.com;
+    " />
+
+
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=(), fullscreen=(self)" />
 
-    <!-- JS Scripts deferred for faster load -->
+    <!-- JS scripts, defer loading -->
     <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <script src="nav.js" defer></script>
 
-    <!-- Preload critical LCP images -->
-    <link rel="preload" as="image" href="hero.webp" type="image/webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="whoare.webp" type="image/webp" fetchpriority="high" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registered:', reg.scope))
+                    .catch(err => console.error('Service Worker failed:', err));
+            });
+        }
+    </script>
+          
+
+    <!-- Your local JS file -->
+    <script defer src="nav.min.js"></script>
 </head>
 
   
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
@@ -228,6 +241,25 @@
                         <p class="paragraph">Track vendor performance, project milestones, and cost metrics in real-time
                             with
                             customizable dashboards tailored to your industry needs.</p>
+                    </div>
+                    <div class="slide active">
+                        <i class="bi bi-diagram-3"></i>
+                        <h5>Automated Requirement Handling</h5>
+                        <p class="paragraph">Automate the collection, categorization, and prioritization of industry requirements using AI-powered forms and
+                        logic-driven workflows—minimizing manual follow-ups and ensuring timely execution.</p>
+                    </div>
+                    <div class="slide active">
+                        <i class="bi bi-people"></i>
+                        <h5>Collaborative Bidding Portal</h5>
+                        <p class="paragraph">Enable real-time bidding from verified vendors. Industries can review proposals, compare key metrics, and finalize
+                        contracts—all within a secure and transparent ecosystem.
+                        </p>
+                    </div>
+                    <div class="slide active">
+                        <i class="bi bi-chat-dots"></i>
+                        <h5>Seamless Communication Hub</h5>
+                        <p class="paragraph">Integrated email, WhatsApp, and in-app messaging allow instant collaboration between stakeholders—keeping everyone in
+                        sync from requirement posting to final delivery.</p>
                     </div>
     
                     <button class="nav-btn next-btn" onclick="nextSlide()" aria-label="Next Slide">❯</button>
@@ -476,7 +508,7 @@
                         government-recognized MSME
                         (UDYAM-AP-10-0075552) led by seasoned professionals in control and instrumentation. In 2024, we
                         initiated our flagship
-                        digital transformation journey, and by 2025, strategically evolved into a digital-first AI
+                        digital transformation journey, and by 2025, strategically evolved into a digital-AI
                         technology company.
     
                         Thinkvate specializes in developing AI-driven SaaS platforms designed to optimize industrial
@@ -510,7 +542,7 @@
                                 <h3>Diligince.ai MVP (Development Stage)</h3>
                                 <p class="year">2025</p>
                                 <p class="paragraph">In 2025, we began our MSME registration and transitioned toward a
-                                    digital-first model. This marked the start of
+                                    digital model. This marked the start of
                                     developing our flagship AI SaaS platform, designed to drive intelligent business
                                     automation.
                                 </p>
@@ -541,17 +573,17 @@
             <h2 class="founder-heading service-color section-title">Founder & Director</h2>
             <h4 class="founder-subtitle ">Thinkvate Solutions Pvt. Ltd.</h4>
             <p class="founder-description paragraph">
-                With over 20 years of experience in Instrumentation & Control Engineering, Nagesh has led major power
+                With over 20 years of experience in Instrumentation & Control Engineering, Nagesh Kumar has led major power
                 plant projects
                 across India and Saudi Arabia. His deep understanding of industrial operations and vendor ecosystems led
                 to the
                 creation
-                of <strong>Diligince.ai</strong>—India’s first AI-powered platform designed to streamline vendor
+                of <strong>Diligince.ai</strong>—India’s AI-powered platform designed to streamline vendor
                 management and
                 connect industries with
                 verified service providers.
     
-                Nagesh combines technical expertise with strategic vision to drive Thinkvate’s mission of building
+                Nagesh Kumar combines technical expertise with strategic vision to drive Thinkvate’s mission of building
                 secure, scalable,
                 and
                 intelligent solutions that improve operational efficiency and enable digital transformation across
@@ -578,7 +610,7 @@
                                 width="300" height="300" style="aspect-ratio: 1/1;" />
                         </picture>
                         <div class="mentor-overlay">
-                            <p class="mentor-role">Project Manager</p>
+                            <p class="mentor-role">Project Manager at Leading Multinational Company</p>
                             <p class="mentor-details">
                                 A seasoned engineering professional with 15+ years of experience in DevOps, automation
                                 testing, and technical training. Holds an M.Tech in Instrumentation and specializes in
@@ -644,7 +676,7 @@
                                 width="300" height="300" style="aspect-ratio: 1/1;" />
                         </picture>
                         <div class="mentor-overlay">
-                            <p class="mentor-role">Director in multiple national companies</p>
+                            <p class="mentor-role">Director at Leading Multinational Company</p>
                             <p class="mentor-details">
                                 With 20+ years in IT, I lead global SAP implementation programs as a Director in a
                                 multinational company. I specialize in project delivery, program management, and vendor
@@ -834,7 +866,6 @@
                     <div class="text-start">
                         <p class="mb-2 fw-bold">Thinkvate Solutions Pvt. Ltd</p>
                         <p class="mb-2">CIN: U74999AP2019PTC111774</p>
-                        <p class="mb-2">MSME Reg.No: UDYAM-AP-10-0075552</p>
                         <p class="mb-0">Visakhapatnam - 530051</p>
                     </div>
                 </div>
