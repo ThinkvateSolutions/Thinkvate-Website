@@ -1,9 +1,11 @@
 const CACHE_NAME = 'thinkvate-cache-v1';
+
 const urlsToCache = [
   '/index.html',
   '/Thinkvate.css',
   '/nav.min.js',
-  '/_Welcome_to_Thinkvate_V1.mp4', // Consider removing this if file is large
+  // Consider lazy-loading this large video in the app instead of caching
+  '/transforming-industrial-connections-veed_IXzg45gD.mp4',
 
   // WebP images
   '/Arun.webp',
@@ -20,7 +22,7 @@ const urlsToCache = [
   '/mani.webp',
   '/Manufacturing.webp',
   '/MSME.webp',
-  '/OEM\'s.webp',
+  '/OEM%27s.webp',           // ✅ Fixed special character (apostrophe encoded)
   '/Oil.webp',
   '/Radha.webp',
   '/Santosh.webp',
@@ -28,25 +30,35 @@ const urlsToCache = [
   '/whoare.webp',
 
   // JPEG fallback
-  '/who%20we%20are%20img.jpeg', // URL-encoded space
+  '/who%20we%20are%20img.jpeg', // ✅ Space is URL-encoded
 ];
 
-// Install SW and cache files
+// Install event: cache files with error handling
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
+    caches.open(CACHE_NAME).then(async cache => {
+      for (const url of urlsToCache) {
+        try {
+          await cache.add(url);
+          console.log(`✅ Cached: ${url}`);
+        } catch (err) {
+          console.warn(`⚠️ Failed to cache: ${url}`, err);
+        }
+      }
+    })
   );
-  self.skipWaiting();
+  self.skipWaiting(); // Activate SW immediately
 });
 
-// Fetch requests and serve from cache
+// Fetch event: serve cached content or fetch from network
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(cachedResponse => {
       if (cachedResponse) return cachedResponse;
+
       return fetch(event.request).then(networkResponse => {
         return caches.open(CACHE_NAME).then(cache => {
+          // Cache valid GET requests for same-origin resources
           if (
             event.request.method === 'GET' &&
             networkResponse.type === 'basic' &&
@@ -56,12 +68,15 @@ self.addEventListener('fetch', event => {
           }
           return networkResponse;
         });
+      }).catch(err => {
+        console.warn('🌐 Network fetch failed:', err);
+        return new Response('Network error', { status: 408 });
       });
     })
   );
 });
 
-// Cleanup old caches
+// Activate event: clean up old caches
 self.addEventListener('activate', event => {
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
@@ -75,4 +90,5 @@ self.addEventListener('activate', event => {
       )
     )
   );
+  self.clients.claim(); // Control all pages immediately
 });
