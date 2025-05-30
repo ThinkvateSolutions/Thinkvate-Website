@@ -1,13 +1,23 @@
-.hero-content h1,
-.hero-content h5 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, .6)
-}
-
 .hero,
 .hero-content,
 .nav-link,
+.service-slider,
 .slider {
   position: relative
+}
+
+.btn-join,
+.btn-learn,
+.btn-primary,
+.footer-section a:hover,
+.nav-link,
+.social-icons a {
+  text-decoration: none
+}
+
+.hero-content h1,
+.hero-content h5 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .6)
 }
 
 .founder-heading,
@@ -62,20 +72,6 @@
   }
 }
 
-@media (min-width:992px) {
-  .logo {
-    height: 100px;
-    width: 100px
-  }
-
-  .webname {
-    color: #1e3a8a;
-    font-size: 50px;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3)
-  }
-}
-
 .navbar-toggler {
   background-color: #00f;
   border: none;
@@ -96,7 +92,6 @@
 .nav-link {
   display: inline-block;
   color: #000;
-  text-decoration: none;
   padding-bottom: 4px
 }
 
@@ -115,27 +110,39 @@
   width: 90%
 }
 
-@media (min-width: 992px) {
+@media (min-width:992px) {
+  .logo {
+    height: 100px;
+    width: 100px
+  }
+
+  .webname {
+    color: #1e3a8a;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3)
+  }
+
   .navbar .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
   }
 
   .navbar-nav {
     flex-direction: row;
-    gap: 20px;
+    gap: 20px
   }
 
   .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 12px
   }
 
   .navbar-nav .nav-link {
-    padding-left: 0 !important;
+    padding-left: 0 !important
   }
 }
 
@@ -181,15 +188,14 @@ small {
 }
 
 .hero {
-  background: url('hero.webp') center center / cover no-repeat;
+  background: url('hero.webp') center center/cover no-repeat #123456;
   min-height: 75vh;
   color: #fff;
   padding: 70px 0;
   margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #123456;
+  justify-content: center
 }
 
 .hero::before {
@@ -231,7 +237,6 @@ small {
   padding: .75rem 1.5rem;
   border-radius: 50px;
   font-weight: 600;
-  text-decoration: none;
   transition: background .3s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .2)
 }
@@ -341,7 +346,6 @@ small {
   color: #0f172a;
   font-weight: 600;
   border-radius: 8px;
-  text-decoration: none;
   transition: .3s
 }
 
@@ -502,15 +506,12 @@ button {
   }
 }
 
-
 .card-body h5 {
   font-weight: 700
 }
 
-
 .service-slider {
-  position: relative;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .service-slider-track {
@@ -520,37 +521,42 @@ button {
   scroll-snap-type: x mandatory;
   padding: 20px 10%;
   scroll-padding-inline: 10%;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
 
 .service-slider-track::-webkit-scrollbar {
-  display: none;
+  display: none
 }
 
 .service-slide {
   flex: 0 0 60%;
   scroll-snap-align: center;
-  background: white;
+  background: #fff;
   border-radius: 20px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
   padding: 30px;
-  transition: all 0.3s ease;
+  transition: .3s;
   text-align: left;
-  opacity: 0.7;
-  transform: scale(0.95);
-  min-width: 280px;
+  opacity: .7;
+  transform: scale(.95);
+  min-width: 280px
+}
+
+.icon-box,
+button {
+  background: linear-gradient(135deg, #6a11cb 0, #2575fc 100%)
 }
 
 .service-slide:hover {
   transform: scale(1);
   opacity: 1;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, .15)
 }
 
 .service-slide.active {
   opacity: 1;
   transform: scale(1.05);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, .2)
 }
 
 .icon-box {
@@ -559,32 +565,30 @@ button {
   height: 70px;
   margin-bottom: 20px;
   color: #fff;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 12px
 }
 
 .service-slide h5 {
   font-size: 1.25rem;
   color: #1d3557;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .service-slide p {
-  font-size: 0.95rem;
-  color: #444;
+  font-size: .95rem;
+  color: #444
 }
 
-/* === Navigation Buttons === */
 .nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: #1d3557;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 50%;
   width: 42px;
@@ -592,77 +596,76 @@ button {
   font-size: 20px;
   z-index: 5;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .2)
 }
 
 .prev-btn {
-  left: 10px;
+  left: 10px
 }
 
 .next-btn {
-  right: 10px;
+  right: 10px
 }
 
-/* === Responsive Styles === */
-@media (max-width: 992px) {
+@media (max-width:992px) {
   .service-slider-track {
     padding: 20px 5%;
-    gap: 16px;
+    gap: 16px
   }
 
   .service-slide {
     flex: 0 0 75%;
     padding: 25px;
-    min-width: 260px;
+    min-width: 260px
   }
 
   .icon-box {
-      width: 60px;
-      height: 60px;
-      font-size: 40px;
-      margin-bottom: 16px;
-    }
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    margin-bottom: 16px
+  }
 
   .service-slide h5 {
-    font-size: 1.1rem;
+    font-size: 1.1rem
   }
 
   .service-slide p {
-    font-size: 0.9rem;
+    font-size: .9rem
   }
 
   .nav-btn {
     width: 38px;
     height: 38px;
-    font-size: 18px;
+    font-size: 18px
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
   .service-slider-track {
     padding: 15px 5%;
-    gap: 12px;
+    gap: 12px
   }
 
   .service-slide {
     flex: 0 0 90%;
     padding: 20px;
-    min-width: 220px;
+    min-width: 220px
   }
 
   .icon-box {
-      width: 50px;
-      height: 50px;
-      font-size: 32px;
-      margin-bottom: 12px;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    margin-bottom: 12px
   }
 
   .service-slide h5 {
-    font-size: 1rem;
+    font-size: 1rem
   }
 
   .service-slide p {
-    font-size: 0.85rem;
+    font-size: .85rem
   }
 
   .nav-btn {
@@ -670,30 +673,30 @@ button {
     height: 34px;
     font-size: 16px;
     left: 5px;
-    right: 5px;
+    right: 5px
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width:400px) {
   .service-slide {
     flex: 0 0 95%;
     padding: 15px;
-    min-width: 200px;
+    min-width: 200px
   }
 
   .icon-box {
-      width: 44px;
-      height: 44px;
-      font-size: 28px;
-      margin-bottom: 10px;
+    width: 44px;
+    height: 44px;
+    font-size: 28px;
+    margin-bottom: 10px
   }
 
   .service-slide h5 {
-    font-size: 0.9rem;
+    font-size: .9rem
   }
 
   .service-slide p {
-    font-size: 0.8rem;
+    font-size: .8rem
   }
 
   .nav-btn {
@@ -701,36 +704,35 @@ button {
     height: 30px;
     font-size: 14px;
     left: 4px;
-    right: 4px;
+    right: 4px
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width:375px) {
   .service-slider-track {
     padding: 15px 3%;
-    gap: 10px;
+    gap: 10px
   }
 
   .service-slide {
     flex: 0 0 95%;
     min-width: unset;
-    padding: 15px 12px;
+    padding: 15px 12px
   }
 
   .icon-box {
     width: 44px;
     height: 44px;
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
   }
-  
 
   .service-slide h5 {
-    font-size: 0.9rem;
+    font-size: .9rem
   }
 
   .service-slide p {
-    font-size: 0.8rem;
+    font-size: .8rem
   }
 
   .nav-btn {
@@ -738,47 +740,50 @@ button {
     height: 30px;
     font-size: 14px;
     left: 6px;
-    right: 6px;
+    right: 6px
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
+
+  .icon-box,
+  .nav-btn {
+    width: 50px;
+    height: 50px
+  }
+
   .service-slider-track {
     padding: 30px 15%;
-    gap: 32px;
+    gap: 32px
   }
 
   .service-slide {
     flex: 0 0 50%;
     min-width: 400px;
-    padding: 40px;
+    padding: 40px
   }
 
   .icon-box {
-      width: 50px;
-      height: 50px;
-      font-size: 48px !important;
-      margin-bottom: 24px;
-    }
+    font-size: 48px !important;
+    margin-bottom: 24px
+  }
 
   .service-slide h5 {
-    font-size: 1.5rem;
+    font-size: 1.5rem
   }
 
   .service-slide p {
-    font-size: 1.1rem;
+    font-size: 1.1rem
   }
 
   .nav-btn {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
+    font-size: 24px
   }
 }
 
-.text-heading{
+.text-heading {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .timeline-dot,
@@ -840,6 +845,12 @@ button {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
   transition: transform .3s
+}
+
+.mentor-card,
+.service-card,
+.wcu-card {
+  transition: transform .3s, box-shadow .3s
 }
 
 .timeline-content:hover {
@@ -918,8 +929,7 @@ button {
 
 .service-card,
 .wcu-card {
-  border-radius: 16px;
-  transition: transform .3s, box-shadow .3s
+  border-radius: 16px
 }
 
 .our-services-section {
@@ -1092,7 +1102,6 @@ button {
   border-radius: 14px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, .1);
   padding: 15px;
-  transition: transform .3s, box-shadow .3s;
   height: auto;
   margin: 10px
 }
@@ -1278,7 +1287,6 @@ button {
 }
 
 button {
-  background: linear-gradient(135deg, #6a11cb 0, #2575fc 100%);
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -1362,17 +1370,20 @@ button:active {
 }
 
 @media (max-width:480px) {
+
+  .join-btn,
+  button {
+    padding: 10px 24px;
+    width: 100%
+  }
+
   .join-btn {
     font-size: 16px;
-    padding: 10px 24px;
-    width: 100%;
     display: block
   }
 
   button {
-    font-size: 14px;
-    padding: 10px 24px;
-    width: 100%
+    font-size: 14px
   }
 }
 
@@ -1405,8 +1416,7 @@ button:active {
 
 .footer-section a:hover {
   color: #f8c146;
-  transform: translateX(5px);
-  text-decoration: none
+  transform: translateX(5px)
 }
 
 .footer-section p {
@@ -1451,8 +1461,7 @@ button:active {
   background-color: rgba(255, 255, 255, .1);
   border-radius: 50%;
   color: #fff;
-  transition: .3s;
-  text-decoration: none
+  transition: .3s
 }
 
 .social-icons a:hover {
