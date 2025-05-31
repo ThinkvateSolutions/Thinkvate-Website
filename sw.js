@@ -3,7 +3,7 @@ const urlsToCache = [
   '/index.html',
   '/Thinkvate.css',
   '/nav.min.js',
-  '/transforming-industrial-connections-veed_IXzg45gD.mp4', // Consider removing this if file is large
+  '/transforming-industrial-connections.mp4', // Consider removing this if file is large
 
   // WebP images
   '/Arun.webp',

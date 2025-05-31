@@ -28,9 +28,6 @@
     <!-- Favicon placeholder -->
     <link rel="icon" href="data:,">
 
-
-
-
     <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,6 +35,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Bootstrap CSS with correct integrity -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -136,13 +135,13 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto text-center name">
+                <div class="navbar-nav ml-auto  name">
                     <a class="nav-link pl-3" href="#homsection" onclick="collapseNavbar()">Home</a>
-                    <a class="nav-link pl-4" href="#wcuSection" onclick="collapseNavbar()">Why Choose Us</a>
-                    <a class="nav-link pl-4" href="#exploreMenuSection" onclick="collapseNavbar()">Our Services</a>
-                    <a class="nav-link pl-4" href="#deliveryPaymentSection" onclick="collapseNavbar()">About Us</a>
-                    <a class="nav-link pl-4" href="#followUsSection" onclick="collapseNavbar()">Mentors</a>
-                    <a class="nav-link pl-2" href="#contact-us" onclick="collapseNavbar()">Contact Us</a>
+                    <a class="nav-link pl-3" href="#wcuSection" onclick="collapseNavbar()">Why Choose Us</a>
+                    <a class="nav-link pl-3" href="#exploreMenuSection" onclick="collapseNavbar()">Our Services</a>
+                    <a class="nav-link pl-3" href="#deliveryPaymentSection" onclick="collapseNavbar()">About Us</a>
+                    <a class="nav-link pl-3" href="#followUsSection" onclick="collapseNavbar()">Mentors</a>
+                    <a class="nav-link pl-3" href="#contact-us" onclick="collapseNavbar()">Contact Us</a>
 
                 </div>
             </div>
@@ -183,7 +182,7 @@
                         <p class="section-text">
                             Our platform, <strong>Diligince.ai</strong> is a secure ecosystem that connects manufacturers
                             with
-                            vetted service providers, logistics vendors and expert consultants powered by intelligent
+                            vetted service providers, logistics, vendors and expert consultants powered by intelligent
                             matching
                             and collaboration.
                         </p>
@@ -202,7 +201,6 @@
         </section>
     
     
-    
         <!-- Product Intro Section -->
         <div class="service-slider-section">
             <div class="container text-center">
@@ -210,11 +208,23 @@
                 <h3 class="diligince-color" id="changingText">Meet Diligince.ai</h3>
                 <p class="mb-5 paragraph">
                     <strong>Diligince.ai</strong> is an AI driven industrial ecosystem platform, leveraging proprietary matching
-                    algorithms to connect businesses with verified service providers, domain experts and vendors—cutting
+                    algorithms to connect businesses with verified service providers, domain experts and vendors cutting
                     procurement
                     time by 60% and boosting match accuracy by 85%.
                 </p>
-        
+
+                <div class="center-button">
+                    <button id="scrollLeftBtn" class="slider-arrow-btn me-3" aria-label="Scroll left">
+                        <i class="bi bi-arrow-left-circle-fill"></i>
+                    </button>
+                    <button id="scrollRightBtn" class="slider-arrow-btn" aria-label="Scroll right">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </button>
+                </div>
+                  
+                
+                
+
                 <div class="service-slider">
                     <div class="service-slider-track" id="sliderTrack">
                         <div class="service-slide">
@@ -227,7 +237,7 @@
                         <div class="service-slide">
                             <div class="icon-box"><i class="bi bi-bar-chart"></i></div>
                             <h5>Verified Ecosystem</h5>
-                            <p>Every professional and vendor undergoes a rigorous 3 step verification process,
+                            <p>Every professional and vendor undergoes a rigorous 3 step verification process and
                                 ensuring you connect only with trusted, qualified partners.</p>
                         </div>
         
@@ -289,7 +299,7 @@
                 <h2 class="wcu-section-heading service-color section-title">Why Choose Us</h2>
                 <p class="wcu-section-description paragraph">
                     We leverage deep industry expertise and advanced AI technologies to address critical operational
-                    challenges in Indian
+                    challenges in global
                     industries. Our approach drives measurable efficiency gains through intelligent, data-driven
                     connections, ensuring
                     optimized performance and verified results.
@@ -308,7 +318,7 @@
                             design practical, impact-driven solutions that solve real-world problems not just
                             theoretical
                             ones ensuring measurable
-                            value for your business.
+                            value for your businesses.
                         </p>
                     </div>
                 </div>
@@ -340,7 +350,7 @@
                             verification process. Our proprietary scoring algorithm assesses technical expertise,
                             project
                             experience and
-                            performance metrics—ensuring businesses connect only with pre-vetted, qualified partners
+                            performance metrics ensuring businesses connect only with pre-vetted, qualified partners
                             tailored to their needs.
                         </p>
                     </div>
@@ -495,7 +505,7 @@
                 <!-- Video Column -->
                 <div class="col-12 col-md-10 text-center">
                     <video class="responsive-video" controls autoplay muted loop playsinline preload="metadata">
-                        <source src="transforming-industrial-connections-veed_IXzg45gD.mp4" type="video/mp4" />
+                        <source src="transforming-industrial-connections.mp4" type="video/mp4" />
                         <track src="captions_en.vtt" kind="captions" srclang="en" label="English" />
                         Your browser does not support the video tag.
                     </video>
@@ -527,7 +537,7 @@
     
                     <h2 class="text-center mt-5 mb-3 service-color text-heading">Our Journey</h2>
                     <section class="timeline">
-                        <div class="timeline-item mb-4">
+                        <div class="timeline-item timeline-item right mb-4">
                             <div class="timeline-content">
                                 <h3>Founded Thinkvate</h3>
                                 <p class="year">2019</p>
@@ -538,8 +548,8 @@
                             </div>
                             <div class="timeline-dot"></div>
                         </div>
-                        <div class="timeline-item mb-4">
-                            <div class="timeline-content pl-2">
+                        <div class="timeline-item timeline-item left mb-4">
+                            <div class="timeline-content">
                                 <h3>Diligince.ai</h3>
                                 <p class="year">2025</p>
                                 <p class="paragraph">In 2025, we began our MSME registration and transitioned toward a
@@ -550,11 +560,11 @@
                             </div>
                             <div class="timeline-dot"></div>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item timeline-item right">
                             <div class="timeline-content">
                                 <h3>Expanding Impact</h3>
                                 <p class="year">2026</p>
-                                <p class="paragraph">Aiming to support 100+ MSMEs with diligince.ai.</p>
+                                <p class="paragraph">Aiming to support 100+ MSMEs with <strong>Diligince.ai</strong></p>
                             </div>
                             <div class="timeline-dot"></div>
                         </div>
@@ -597,11 +607,12 @@
       
     <!-- mentor section  -->
 
-    <div class="mentors-section pt-5 pb-5" id="followUsSection">
+
+    <!-- <div class="mentors-section pt-5 pb-5" id="followUsSection">
         <div class="container">
             <h1 class="mentors-heading section-title text-center mb-5">Our Mentors</h1>
             <div class="row justify-content-center">
-                <!-- Mentor Card 1 -->
+
                 <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
                         <picture>
@@ -623,7 +634,6 @@
                     <p class="mentor-name mt-2">G.Arun Kumar</p>
                 </div>
     
-                <!-- Mentor Card 2 -->
                 <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
                         <picture>
@@ -645,7 +655,6 @@
                     <p class="mentor-name mt-2">Anitha K</p>
                 </div>
     
-                <!-- Mentor Card 3 -->
                 <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
                         <picture>
@@ -667,7 +676,6 @@
                     <p class="mentor-name mt-2">G Santosh Kumar</p>
                 </div>
     
-                <!-- Mentor Card 4 -->
                 <div class="col-10 col-md-6 col-lg-4 text-center mentor-card mb-4">
                     <div class="mentor-img-wrapper">
                         <picture>
@@ -691,7 +699,7 @@
     
             </div>
         </div>
-    </div>
+    </div> -->
 
       
 
@@ -712,7 +720,7 @@
                     <div class="team-info">
                         <p class="team-role">Frontend Developer</p>
                     </div>
-                    <h3 class="team-name">Kishore</h3>
+                    <h3 class="team-name">Gandreti Kishore</h3>
                     <p class="team-description">
                         A professional expert in front-end development with a solid foundation in full-stack web technologies and a strong
                         background in AI and Machine Learning. Gained practical experience by building dynamic, scalable web applications as
@@ -734,7 +742,7 @@
                     <div class="team-info">
                         <p class="team-role">Backend Developer</p>
                     </div>
-                    <h3 class="team-name">Radha</h3>
+                    <h3 class="team-name">Munakala Radha</h3>
                     <p class="team-description">
                         A backend development expert with strong proficiency in building robust, scalable server-side applications. Experienced
                         in designing and implementing RESTful APIs using SQL and Spring Boot, with hands-on expertise in microservices
@@ -756,7 +764,7 @@
                     <div class="team-info">
                         <p class="team-role">Frontend Developer</p>
                     </div>
-                    <h3 class="team-name">Sravani</h3>
+                    <h3 class="team-name">Durgasa Sravani</h3>
                     <p class="team-description">
                         Frontend Developer with a strong focus on building responsive, user-centric web applications. Known for creating clean,
                         intuitive interfaces that enhance user engagement and performance across devices.
@@ -778,7 +786,7 @@
                     <div class="team-info">
                         <p class="team-role">Automation Test Engineer</p>
                     </div>
-                    <h3 class="team-name">Manikanta</h3>
+                    <h3 class="team-name">Gurajapu Sree Manikanta</h3>
                     <p class="team-description">
                         Software Tester with a background in Computer Science and a strong foundation in Python, machine learning, and deep
                         learning. Currently working in quality assurance, ensuring the reliability and performance of software through both
@@ -810,7 +818,7 @@
                 <div class="col-lg-8 col-md-10 text-center">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSezzXfz9ZD0jAXSSbdXPmshL7KgztRqwnsbwmuPou8w-tqw5A/viewform?embedded=true"
                         target="_blank" id="joinUsLink">
-                        <button>Join Us</button>
+                        <button>Register Now</button>
                     </a>
                 </div>
             </div>
@@ -836,13 +844,13 @@
                 <div class="col-12 col-md-4 mb-4 allignment">
                     <h5 class="mb-3">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#homsection" class="text-white text-decoration-none d-block">Home</a></li>
-                        <li><a href="#wcuSection" class="text-white text-decoration-none d-block">Why Choose Us</a></li>
-                        <li><a href="#exploreMenuSection" class="text-white text-decoration-none d-block">Our Services</a>
+                        <li><a href="#homsection" class="text-white text-decoration-none d-block link-underline-active">Home</a></li>
+                        <li><a href="#wcuSection" class="text-white text-decoration-none d-block link-underline-active">Why Choose Us</a></li>
+                        <li><a href="#exploreMenuSection" class="text-white text-decoration-none d-block link-underline-active">Our Services</a>
                         </li>
-                        <li><a href="#deliveryPaymentSection" class="text-white text-decoration-none d-block">About Us</a>
+                        <li><a href="#deliveryPaymentSection" class="text-white text-decoration-none d-block link-underline-active">About Us</a>
                         </li>
-                        <li><a href="#followUsSection" class="text-white text-decoration-none d-block">Mentors</a></li>
+                        <li><a href="#followUsSection" class="text-white text-decoration-none d-block link-underline-active">Mentors</a></li>
                     </ul>
                 </div>
     
@@ -852,7 +860,7 @@
                         <h5 class="mb-3">Connect with Us</h5>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="mailto:contact@thinkvate.com" class="text-white text-decoration-none d-block">
+                                <a href="mailto:contact@thinkvate.com" class="text-white text-decoration-none d-block link-underline-active">
                                     contact@thinkvate.com
                                 </a>
                             </li>
@@ -876,9 +884,10 @@
                 <div class="col-12 col-md-4 mb-4 company-details">
                     <h5 class="mb-3 text-start">Company Details</h5>
                     <div class="text-start">
-                        <p class="mb-2 fw-bold">Thinkvate Solutions Pvt. Ltd</p>
-                        <p class="mb-2">CIN: U74999AP2019PTC111774</p>
-                        <p class="mb-0">Visakhapatnam - 530051</p>
+                        <p class="mb-2 fw-bold pl-3">Thinkvate Solutions Pvt. Ltd</p>
+                        <p class="mb-2 pl-5">CIN: U74999AP2019PTC111774</p>
+                        <p class="mb-1 pr-2 pl-1">Visakhapatnam - 530051</p>
+                        <p class="mb-1 pr-3">Andhra Pradesh, India</p>
                     </div>
                 </div>
                   
@@ -890,33 +899,6 @@
             </div>
         </div>
     </footer>
-      
-
-    <!-- script section -->
-
-    <script>
-        const slides = document.querySelectorAll(".slide");
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.toggle("active", i === index);
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        // Initialize first slide
-        showSlide(currentSlide);
-    </script>
       
 
 </body>
