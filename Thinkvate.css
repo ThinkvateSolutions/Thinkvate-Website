@@ -1389,11 +1389,13 @@ button:active {
   }
 
   .wcu-card-title {
-    font-size: 1.125rem
+    font-size: 1.125rem;
+    font-weight: bold;
   }
 
   .founder-subtitle {
-    font-size: 1.1rem
+    font-size: 1.1rem;
+    font-weight: bold;
   }
 
   .founder-img-wrapper {
