@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.thinkvate.com/sitemap.xml
+Sitemap: https://thinkvate.com/sitemap.xml
